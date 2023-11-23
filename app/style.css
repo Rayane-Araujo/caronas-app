@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+:root {
+    --cor-titulo: #ffa500;
+}
+
+
+.body {
+    height: 100vh;
+}
+
+.titulo {
+    font-family: 'Itim', cursive;
+    color: var(--cor-titulo);
+}
