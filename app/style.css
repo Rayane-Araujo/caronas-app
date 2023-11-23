@@ -2,3 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --cor-titulo : #FFA500;
+
+
+    --fonte-titulo: 'Itim', cursive;
+
+}
+
+
+
+.titulo {
+    color: var(--cor-titulo);
+    font-weight: 400px;
+    font-family: var(--fonte-titulo);
+}
+
