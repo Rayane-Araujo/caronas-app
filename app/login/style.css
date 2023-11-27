@@ -13,7 +13,8 @@ main {
 
 main header {
     text-align: center;
-
+    color: #FFA500;
+    font-size: 30px
 }
 
 main div.content {
@@ -27,6 +28,7 @@ main div.content {
     margin-top: 50px;
     padding-left: 28px;
     padding-right: 28px;
+    
 }
 
 
@@ -36,6 +38,7 @@ man div.content div.contentInputs {
     align-items: center;
     gap: 20px;
     width: 100%;
+    
 }
 
 
@@ -45,6 +48,7 @@ main div.links {
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    
 
 
     margin-top: 50px;

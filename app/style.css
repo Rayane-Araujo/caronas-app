@@ -8,12 +8,24 @@
 
 .input span {
     font-size: 12px;
+    font-family: Open Sans;
+    color: #808080;
+   
 
 }
 
 .input input {
     padding: 12px;
-    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #FFA500;
+    width: 290px;
+    height: 30px;
+   
+    
+    
+    
+    
+
 }
 
 button {
@@ -30,3 +42,5 @@ button {
     font-size: 25px;
     
 }
+
+
