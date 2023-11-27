@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   align-items: center;
+    padding-top: 40px;  
+    padding-bottom: 40px;    
+
+   min-height: 100vh;
+  
+}
+
+main header {
+    text-align: center;
+
+}
+
+main div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 280px;
+    margin-top: 50px;
+}
