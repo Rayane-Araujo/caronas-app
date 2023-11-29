@@ -9,10 +9,14 @@ main {
 
    min-height: 100vh;
 }
+
+
+
 main header {
     text-align: center;
     color: #FFA500;
     font-size: 30px
+    
 }
 main div.content {
     display: flex;
@@ -48,5 +52,9 @@ main div.links {
     box-sizing: border-box;
 }
 
+
+main header input {
+    width: 0%;
+}
 
 
