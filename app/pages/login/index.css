@@ -31,7 +31,7 @@ main div.content div.contentInputs {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 100%;
+
 }
 main div.links {
     display: flex;
@@ -39,6 +39,7 @@ main div.links {
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    
     
     margin-top: 50px;
 }
