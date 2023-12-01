@@ -6,7 +6,6 @@ main {
    align-items: center;
     padding-top: 40px;  
     padding-bottom: 60px;    
-
    min-height: 100vh;
 }
 main header {
@@ -19,7 +18,6 @@ main div.content {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     height: 280px;
     margin-top: 50px;
@@ -31,7 +29,6 @@ main div.content div.contentInputs {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 main div.links {
     display: flex;
@@ -39,15 +36,6 @@ main div.links {
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    
-    
     margin-top: 50px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 

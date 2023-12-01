@@ -3,9 +3,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
     padding-top: 40px;  
-    padding-bottom: 60px;    
+    padding-bottom: 200px;    
 
    min-height: 100vh;
 }
@@ -33,21 +33,7 @@ main div.content div.contentInputs {
     gap: 20px;
 
 }
-main div.links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    
-    
-    margin-top: 50px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 
