@@ -48,7 +48,10 @@ margin-block-start: 2.3em;
 margin-block-end: -5.33em;
 margin-inline-start: 166px;
 margin-inline-end: 0px;
-font-weight: bold;
+font-weight: 400;
+font-family: 'itim',cursive;
+letter-spacing: -1.28px;
+line-height: 66.523%;
 }
 
 main div.custom-checkbox input{
