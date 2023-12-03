@@ -28,12 +28,7 @@ main div.content div.contentInputs {
     flex-direction: column;
     gap: 10px;   
 }
-main div textarea {
-    border-color: #FFA500;
-    padding: 45px;
-    text-align: start;   
-    border-radius: 4px;
-}
+
 
 main div.check {
     font-family: 'Itim',cursive;
@@ -79,4 +74,27 @@ main div.custom-checkbox input:checked + label:before {
   padding: 1px;
 }
 
+main div textarea {
+    border-color: #FFA500;
+    padding: 40px;
+    text-align: start;   
+    border-radius: 4px;
+}
 
+fieldset {
+    height: 150px;
+    border-radius: 4px;
+    width: 289px;
+    border: 1px solid #FFA500;
+    
+}
+
+h5 {
+    margin-block-start: 1.3em;
+    margin-inline-start: 117px;
+    font-weight: 400;
+    font-family: 'itim',cursive;
+    color: #6e6e6e;
+
+  
+}
