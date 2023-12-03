@@ -37,9 +37,8 @@ main div textarea {
 main div.check {
     font-family: 'Itim',cursive;
     color: #6e6e6e;  
-
 }
 
-input:checked {
-    background-color: #FFA500;
+input[type="checkbox"]:checked,input[type="radio"]:checked {
+    background-color: red;
 }
