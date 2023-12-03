@@ -34,11 +34,46 @@ main div textarea {
     text-align: start;   
     border-radius: 4px;
 }
+
 main div.check {
     font-family: 'Itim',cursive;
     color: #6e6e6e;  
+
 }
 
-input[type="checkbox"]:checked,input[type="radio"]:checked {
-    background-color: red;
+h4 {
+
+display: table-caption;
+margin-block-start: 2.3em;
+margin-block-end: -5.33em;
+margin-inline-start: 166px;
+margin-inline-end: 0px;
+font-weight: bold;
 }
+
+main div.custom-checkbox input{
+  display: none;
+}
+
+main div.custom-checkbox input + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+main div.custom-checkbox input:checked + label:before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #FFA500;
+  background-position: center;
+  border: none;
+  padding: 1px;
+}
+
+
