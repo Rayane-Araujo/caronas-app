@@ -26,7 +26,6 @@ main div.content {
 main div.content div.contentInputs {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;   
 }
 main div textarea {
@@ -34,4 +33,13 @@ main div textarea {
     padding: 45px;
     text-align: start;   
     border-radius: 4px;
+}
+main div.check {
+    font-family: 'Itim',cursive;
+    color: #6e6e6e;  
+
+}
+
+input:checked {
+    background-color: #FFA500;
 }
