@@ -4,14 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 /* components */
+
+
 .input {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative;  
+} 
+
+
 .input span {
     font-size: 12px;
     font-family: Open Sans;
@@ -19,16 +23,18 @@
     position: absolute;
     top: -7px;
     left: 10px;
-    background-color: white;
-}
+    background-color: white; 
+} 
+
+
 .input input {
     padding: 12px;
     border-radius: 4px;
     border: 1px solid #FFA500;
     width: 290px;
     padding: 5px;
-    gap: 30px;
-}
+    gap: 30px; 
+} 
 button {
     margin-top: 50px;
     border-radius: 31px;
