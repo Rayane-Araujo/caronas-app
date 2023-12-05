@@ -98,19 +98,36 @@ main input.time {
     width: 40px;
     border-color: #d9d9d9;
 }
-main input.date {
+main input.valor_desejado {
     border-left: none;
     border-right: none;
     border-top: none;
     width: 102px;
     border-color: #d9d9d9;
 }
-main div.calendar_image {
-    margin-top: -19px;
+
+
+main div input.calendar {
+    margin-block-start: 1.3em;
+    margin-block-end: -13.33em;
+    margin-inline-start: 65px;
+    font-weight: 400;
+    font-family: 'itim', cursive;
+    letter-spacing: -1.28px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 77px;
+    border-color: #d9d9d9;
+}
+
+
+main div.cifrao_image {
+    margin-top: -55px;
     margin-left: 129px;
 }
 main div.clock_image {
-    margin-top: -24px;
+    margin-top: -23px;
     margin-left: 49px;
 }
 main div.conteudo_busca {
@@ -146,3 +163,12 @@ main div.indicacao_image {
     margin-top: -47px;
     margin-left: 252px;
 }
+
+
+main div.calendar_image {
+    margin-top: 12px;
+    margin-left: 47px;
+}
+
+
+
