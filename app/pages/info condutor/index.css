@@ -55,3 +55,40 @@ h3 {
     letter-spacing: -2.61px;
 
 }
+
+.content_info {
+    color: #6e6e6e;
+    font-family: 'Itim',cursive;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.79px;
+    
+    
+}
+
+.car {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 14px;
+    margin-left: -44px;
+}
+
+.pet {
+    
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 11px;
+    margin-left: -35px;
+
+}
+
+.bag {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 7px;
+    margin-left: -87px;
+
+}
