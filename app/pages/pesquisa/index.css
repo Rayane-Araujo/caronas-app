@@ -68,6 +68,56 @@ main div.indicacao_image {
     font-family: 'Inter', sans-serif;
 }
 
+.content_loupe {
+    display: flex;
+    flex-direction: row;
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-size: 13px;
+    gap: 2px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin-left: 91px;
+    margin-top: 40px;
+}
+
+.content_time_date {
+    display: flex;
+    gap:5px;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.relogio {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 40px;
+    border-color: #d9d9d9;
+}
+
+.arrow {
+    margin-top: -2px;
+}
+
+.calendario {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 60px;
+    border-color: #d9d9d9;
+}
 
 
+.content_calendario {
+    margin-top: 20px;
+    margin-left: 24px;
+
+}
+
+.cc {
+    display: flex;
+    margin-left: 30px;
+    gap: 5px;
+}
 
