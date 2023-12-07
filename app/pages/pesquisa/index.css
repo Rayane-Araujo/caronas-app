@@ -7,6 +7,8 @@ main {
     padding-bottom: 80px;
     min-height: 100vh;
 }
+
+
 main header {
     text-align: center;
     color: #FFA500;
@@ -24,6 +26,7 @@ main div.conteudo_busca {
     height: 51px;
     margin-inline-start: 1.3em;
     gap: 6px;
+    margin-top: 32px;
 }
 main input.origem {
     border-left: none;
@@ -147,11 +150,11 @@ main div.content_options {
 }
 
 main div.valor {
-    margin-left: -1px;
+    margin-left: -3px;
 }
 
-main div.valor1 {
-    margin-left: 29px;
+img.valor1 {
+    margin-left: 31px;
 }
 
 main div.rect {
