@@ -12,16 +12,12 @@ main header {
     color: #FFA500;
     font-size: 24px
 }
-
 main div textarea {
     border-color: #FFA500;
     padding: 40px;
     text-align: start;
     border-radius: 4px;
 }
-
-
-
 main div.conteudo_busca {
     display: flex;
     flex-direction: column;
@@ -55,11 +51,9 @@ main div.indicacao_image {
     margin-top: -47px;
     margin-left: 252px;
 }
-
 main div.content_legenda {
     display: flex;
     flex-direction: row;
-
     color: #6e6e6e;
     font-family: 'Itim', cursive;
     font-size: 13px;
@@ -67,7 +61,6 @@ main div.content_legenda {
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
-
 main div.content_loupe {
     display: flex;
     flex-direction: row;
@@ -77,17 +70,15 @@ main div.content_loupe {
     gap: 2px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-    margin-left: 91px;
+    margin-left: 100px;
     margin-top: 40px;
 }
-
 main div.content_time_date {
     display: flex;
     gap:5px;
     margin-top: 20px;
-    margin-left: 24px;
+    margin-left: 40px;
 }
-
 main input.relogio {
     border-left: none;
     border-right: none;
@@ -95,7 +86,6 @@ main input.relogio {
     width: 40px;
     border-color: #d9d9d9;
 }
-
 main div.arrow {
     margin-top: -2px;
 }
@@ -108,7 +98,6 @@ main input.calendario {
     border-color: #d9d9d9;
 }
 
-
 main div.content_calendario {
     margin-top: 20px;
     margin-left: 24px;
@@ -120,4 +109,70 @@ main div.cc {
     margin-left: 30px;
     gap: 5px;
 }
+
+main fieldset.borda_acesso {
+    border: 1px solid #FFA500;
+    width: 284px;
+    margin-top: 47px;
+    padding: 12px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 12px;
+    
+}
+main div.content_nome {
+    display: flex;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #6e6e6e;
+    gap:10px;
+    margin-top: -12px;
+    margin-left: 45px;
+    
+}
+main div.foto {
+    margin-top: 6px;
+    margin-left: -288px;
+}
+
+main div.content_options {
+    display: flex;
+    gap: 5px;
+    margin-left: 45px;
+    margin-top: -39px;
+    font-family: 'Inter', sans-serif;
+    color: #6e6e6e;
+    font-weight: 500;
+}
+
+main div.valor {
+    margin-left: -1px;
+}
+
+main div.valor1 {
+    margin-left: 29px;
+}
+
+main div.rect {
+    margin-left: 45px;
+    margin-top: 7px;
+}
+
+main div.foto1 {
+    margin-top: 6px;
+    margin-left: -257px;
+}
+
+main div.foto2 {
+    margin-top: 8px;
+    margin-left: -275px;
+}
+
+main div.foto3 {
+    margin-top: 7px;
+    margin-left: -262px;
+}
+
+
 
