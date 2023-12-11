@@ -6,6 +6,7 @@
     <title>App Caronas</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/app/pages/login/index.css" />
+    <script src="/navegation.js"></script>
     
 </head>
 <body>
@@ -26,12 +27,12 @@
                     <input type="password"/>
                 </div>
             </div>
-            <button>Entrar</button>
+            <button onclick="navigate('/app/pages/Opcao/index.html')">Entrar</button>
         </div>
         <div class="links">
-            <a href="##">Esqueci Senha</a>
+            <a href="##" onclick="navigate('/app/pages/redefinir Senha')">Esqueci Senha</a>
         </div>
-        <a href="##">Cadastrar</a>
+        <a href="##" onclick="navigate('/app/pages/cadastro')">Cadastrar</a>
     </main>
 </body>
 </html>
