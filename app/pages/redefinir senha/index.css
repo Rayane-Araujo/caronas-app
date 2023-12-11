@@ -33,3 +33,7 @@ main div.content div.contentInputs {
 main button.redefinir {
      margin-bottom: 40px;
 }
+
+.content {
+    margin-bottom: 100px;
+}

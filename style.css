@@ -32,7 +32,7 @@
     border-radius: 4px;
     border: 1px solid #FFA500;
     width: 302px;
-    padding: 5px;
+    padding: 10px;
     gap: 30px; 
 } 
 button {
@@ -49,4 +49,23 @@ button {
     font-size: 25px;   
 }
 
+button:hover {
+    background-color: #f0ac47;
+    
+}
+
+.input input:hover {
+    border: #f0ac47 solid;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+a:hover {
+    color: #666666;
+}
 
