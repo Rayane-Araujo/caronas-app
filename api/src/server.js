@@ -48,7 +48,7 @@ app.put("/offer", function (req, res) {
   res.send("atualizando ofertas");
 });
 
-app.delete("offer", function (req, res) {
+app.delete("/offer", function (req, res) {
   res.send("deletendo oferta");
 });
 
