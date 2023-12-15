@@ -15,6 +15,11 @@ main {
     margin-top: 40px;
     
 }
+
+header img {
+    width: 80px;
+}
+
 main div textarea {
     border-color: #FFA500;
     padding: 40px;
@@ -46,17 +51,35 @@ main input.destino {
 main div.origem_image {
     margin-top: -49px;
     margin-left: 0px;
-    
 }
+
+main div img.origem_image {
+   width: 15px;
+
+} 
+
+
+main div img.destino_image {
+    width: 15px;
+ 
+ } 
+
 main div.destino_image {
     margin-top: 4px;
     margin-left: -2px;
-    
 }
+
+
 main div.indicacao_image {
     margin-top: -39px;
     margin-left: 252px;
 }
+
+main div img.indicacao_image {
+    width: 30px;
+ 
+ } 
+
 main div.content_legenda {
     display: flex;
     flex-direction: row;
@@ -67,6 +90,12 @@ main div.content_legenda {
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
+
+ img.content_legenda {
+    width: 15px;
+  
+}
+
 main div.content_loupe {
     display: flex;
     flex-direction: row;
