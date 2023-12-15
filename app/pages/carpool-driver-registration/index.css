@@ -12,6 +12,11 @@ header {
     font-size: 30px;
     margin-top: 40px;
 }
+
+header img {
+    width: 80px;
+}
+
 main div.content {
     display: flex;
     flex-direction: column;
@@ -155,13 +160,27 @@ main div.origem_image {
     margin-top: -49px;
     margin-left: 0px;
 }
+
+img.origem_image {
+    width: 15px;
+}
+
 main div.destino_image {
     margin-top: 4px;
     margin-left: -2px;
 }
+
+img.destino_image {
+    width: 16px;
+}
+
 main div.indicacao_image {
     margin-top: -47px;
     margin-left: 252px;
+}
+
+img.indicacao_image {
+    width: 30px;
 }
 
 
