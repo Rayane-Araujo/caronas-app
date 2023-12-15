@@ -6,12 +6,13 @@ main {
     align-items: center;
     padding-top: 40px;  
     padding-bottom: 119px;    
-    min-height: 83vh;
+    min-height: 60vh;
 }
-main header {
+ header {
     text-align: center;
     color: #FFA500;
-    font-size: 25px
+    font-size: 25px;
+    margin-top: 40px;
 }
 main div.content {
     display: flex;
