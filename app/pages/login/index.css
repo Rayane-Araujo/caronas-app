@@ -8,10 +8,11 @@ main {
     padding-bottom: 135px;    
    min-height: 95vh;
 }
-main header {
+header {
     text-align: center;
     color: #FFA500;
-    font-size: 25px
+    font-size: 25px;
+    margin-top: 40px;
 }
 main div.content {
     display: flex;
@@ -35,7 +36,7 @@ main div.links {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 50px;
     margin-top: 50px;
 }
 
