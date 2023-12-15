@@ -46,10 +46,12 @@ main input.destino {
 main div.origem_image {
     margin-top: -49px;
     margin-left: 0px;
+    
 }
 main div.destino_image {
     margin-top: 4px;
     margin-left: -2px;
+    
 }
 main div.indicacao_image {
     margin-top: -39px;
