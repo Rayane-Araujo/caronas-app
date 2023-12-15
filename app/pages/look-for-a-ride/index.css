@@ -90,7 +90,7 @@ main div.content_legenda {
     font-family: 'Inter', sans-serif;
 }
 
- img.content_legenda {
+ img.content_legenda  {
     width: 15px;
   
 }
@@ -200,12 +200,19 @@ main div.content_options {
     font-weight: 500;
 }
 
+
+img.content_options {
+    width: 15px;
+}
+
+
 main div.valor {
     margin-left: -3px;
 }
 
 img.valor1 {
     margin-left: 31px;
+    width: 16px;
 }
 
 main div.rect {
@@ -221,6 +228,10 @@ main div.foto1 {
 main div.foto2 {
     margin-top: 8px;
     margin-left: -275px;
+}
+
+img.foto2 {
+    width: 55px;
 }
 
 main div.foto3 {
