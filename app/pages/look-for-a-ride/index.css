@@ -9,10 +9,12 @@ main {
 }
 
 
-main header {
+ header {
     text-align: center;
     color: #FFA500;
-    font-size: 20px
+    font-size: 20px;
+    margin-top: 40px;
+    
 }
 main div textarea {
     border-color: #FFA500;

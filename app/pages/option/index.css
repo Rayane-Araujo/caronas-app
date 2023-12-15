@@ -58,3 +58,7 @@ main button.redefinir {
 .procurar:hover {
     color: #FFA500;
 }
+
+main span {
+    display: block;
+}

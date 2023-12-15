@@ -11,30 +11,27 @@
 </head>
 
 <body>
-    
     <header>
         <img src="/app/pages/images/logo Foto.jpg" alt="Logo do App Caronas" width="80px" />
         <h3>Selecione</h3>
     </header>
 
     <main>
-        
-        <div class="opcoes">
-            <div>
+        <div class="opcoes"  onclick="navigate('/app/pages/look-for-a-ride')">
+            <div class="procurar">
                 <img src="/app/pages/images/Vector.png" alt="lupa de procurar" width="60px" height="60px" />
-                <div class="procurar" onclick="navigate('/app/pages/look-for-a-ride')">Procurar Carona</div>
+                <span>Procurar Carona</span>
             </div>
 
-            <div>
+            <div class="oferecer" onclick="navigate('/app/pages/carpool-driver-registration')">
                 <img src="/app/pages/images/Mais.png" alt="botão de procurar Carona" width="60px" height="60px" />
-                <div class="oferecer" onclick="navigate('/app/pages/carpool-driver-registration')">Oferecer Carona</div>
+                <span>Oferecer Carona</span>
             </div>
 
-            <div onclick="navigate('/app/pages/ask-for-a-ride')">
+            <div class="pedir" onclick="navigate('/app/pages/ask-for-a-ride')">
                 <img src="/app/pages/images/pedir.png" alt="pedir carona" width="50px" height="50px" />
-                <div class="pedir" >Pedir Carona</div>
+                <span>Pedir Carona</span>
             </div>
-
         </div>
     </main>
 </body>
