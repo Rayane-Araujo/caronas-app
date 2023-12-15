@@ -6,7 +6,7 @@ main {
    align-items: center;
     padding-top: 40px;  
     padding-bottom: 135px;    
-   min-height: 75vh;
+   min-height: 68vh;
 }
 header {
     text-align: center;
@@ -37,6 +37,6 @@ main div.links {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    margin-top: 50px;
+    
 }
 

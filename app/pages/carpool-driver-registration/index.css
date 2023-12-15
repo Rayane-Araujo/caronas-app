@@ -3,14 +3,14 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 80px;
-    min-height: 100vh;
 }
-main header {
+header {
     text-align: center;
     color: #FFA500;
-    font-size: 30px
+    font-size: 30px;
+    margin-top: 40px;
 }
 main div.content {
     display: flex;
