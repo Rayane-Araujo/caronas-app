@@ -189,7 +189,6 @@ img.foto {
     width: 50px;
 }
 
-
 main div.content_options {
     display: flex;
     gap: 5px;
@@ -200,11 +199,9 @@ main div.content_options {
     font-weight: 500;
 }
 
-
 img.content_options {
     width: 15px;
 }
-
 
 main div.valor {
     margin-left: -3px;
