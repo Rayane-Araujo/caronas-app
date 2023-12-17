@@ -10,26 +10,29 @@
     <script src="/app/pages/navegation.js"></script>
 </head>
 <body>
+    <header>
+        <img src="/app/pages/images/Renan_foto.png" alt="Logo do App Caronas"/>
+        <h3>Informações sobre o Usuário</h3>
+    </header>
     <main>
-        <header><img src="/app/pages/images/Renan_foto.png" alt="Logo do App Caronas" width="80px"/>
-            <h3>Informações sobre o Usuário</h3>
-        </header>
+       
         <div class="nome_condutor" onclick="navigate('/app/pages/info usuario/index.html')">
-            <img src="/app/pages/images/whats.png" width="15px" />
+            <img class="whatsapp" src="/app/pages/images/whats.png"/>
             <img src="/app/pages/images/verificado.png" width="20px" />
             <h4 class="texto_nome_condutor">Renan G.Souza</h4>
         </div>
         <div class="content_info">
                 <div class="pet">
-                <img src="/app/pages/images/pet.png" width="20px" height="20px" />
+                <img class="images" src="/app/pages/images/pet.png"/>
                 <div>Animais</div>
             </div>
 
             <div class="bag">
-                <img src="/app/pages/images/Checkbox.png" width="20px" height="28px" />
+                <img class="images" src="/app/pages/images/Checkbox.png"/>
                 <div>Bagagem</div>
             </div>
         </div>
+
         <div>
             <div class="line">
                 <img src="/app/pages/images/Line 12.png" />
@@ -45,7 +48,9 @@
                 <div>Terminal Rodoviário Tietê</div>
                 <div>São Paulo</div>
             </div>
+
         </div>
+
         <div class="content_valor">
             <img src="/app/pages/images/Cifrao.png" />
             <Input class="texto_valor" type="" placeholder="R$ 78,00" />
