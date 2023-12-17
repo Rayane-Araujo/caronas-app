@@ -4,7 +4,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 40px;
-   
 }
  header {
     text-align: center;
@@ -105,3 +104,13 @@ main div.localizacao1 {
     font-family: 'Itim', cursive;
     font-size: 20px;
 }
+
+
+img.whatsapp {
+    width: 15px;
+}
+
+img.images {
+    width: 20px;
+}
+
