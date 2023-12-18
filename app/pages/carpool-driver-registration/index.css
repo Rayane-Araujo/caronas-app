@@ -6,6 +6,7 @@ main {
     padding-top: 10px;
     padding-bottom: 80px;
 }
+
 header {
     text-align: center;
     color: #FFA500;
@@ -27,7 +28,8 @@ main div.content {
     padding-left: 28px;
     padding-right: 28px;
 }
-main div.content div.contentInputs {
+
+main div.content div.contents {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -37,6 +39,7 @@ main div.check {
     font-family: 'Itim', cursive;
     color: #6e6e6e;
 }
+
 h4 {
     display: table-caption;
     margin-block-start: 2.3em;
@@ -52,6 +55,7 @@ h4 {
 main div.custom-checkbox input {
     display: none;
 }
+
 main div.custom-checkbox input+label:before {
     content: '';
     width: 18px;
@@ -64,6 +68,7 @@ main div.custom-checkbox input+label:before {
     margin-right: 8px;
     margin-bottom: 3px;
 }
+
 main div.custom-checkbox input:checked+label:before {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
     background-color: #FFA500;
@@ -71,18 +76,21 @@ main div.custom-checkbox input:checked+label:before {
     border: none;
     padding: 1px;
 }
+
 main div textarea {
     border-color: #FFA500;
     padding: 40px;
     text-align: start;
     border-radius: 4px;
 }
+
 main fieldset {
     height: 150px;
     border-radius: 16px;
     width: 302px;
     border: 1px solid #FFA500;
 }
+
 main h5 {
     margin-block-start: 1.3em;
     margin-inline-start: 117px;
@@ -90,12 +98,14 @@ main h5 {
     font-family: 'itim', cursive;
     color: #6e6e6e;
 }
+
 main div.content_date_time {
     display: flex;
-    gap:40px;
+    gap: 40px;
     margin-inline-start: 4.3em;
     margin-block-start: 1.3em;
 }
+
 main input.time {
     border-left: none;
     border-right: none;
@@ -103,6 +113,7 @@ main input.time {
     width: 40px;
     border-color: #d9d9d9;
 }
+
 main input.valor_desejado {
     border-left: none;
     border-right: none;
@@ -110,7 +121,6 @@ main input.valor_desejado {
     width: 102px;
     border-color: #d9d9d9;
 }
-
 
 main div input.calendar {
     margin-block-start: 1.3em;
@@ -126,15 +136,16 @@ main div input.calendar {
     border-color: #d9d9d9;
 }
 
-
 main div.cifrao_image {
     margin-top: -55px;
     margin-left: 129px;
 }
+
 main div.clock_image {
     margin-top: -23px;
     margin-left: 49px;
 }
+
 main div.conteudo_busca {
     display: flex;
     flex-direction: column;
@@ -142,6 +153,7 @@ main div.conteudo_busca {
     margin-inline-start: 1.3em;
     gap: 6px;
 }
+
 main input.origem {
     border-left: none;
     border-right: none;
@@ -149,6 +161,7 @@ main input.origem {
     width: 219px;
     border-color: #d9d9d9;
 }
+
 main input.destino {
     border-left: none;
     border-right: none;
@@ -156,6 +169,7 @@ main input.destino {
     width: 219px;
     border-color: #d9d9d9;
 }
+
 main div.origem_image {
     margin-top: -49px;
     margin-left: 0px;
@@ -183,11 +197,7 @@ img.indicacao_image {
     width: 30px;
 }
 
-
 main div.calendar_image {
     margin-top: 12px;
     margin-left: 47px;
 }
-
-
-

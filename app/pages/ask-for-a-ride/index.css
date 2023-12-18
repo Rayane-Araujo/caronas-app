@@ -7,7 +7,8 @@ main {
     padding-bottom: 80px;
     min-height: 75vh;
 }
- header {
+
+header {
     text-align: center;
     color: #FFA500;
     font-size: 30px;
@@ -29,7 +30,7 @@ main div.content {
     padding-right: 28px;
 }
 
-main div.content div.contentInputs {
+main div.content div.contents {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -52,7 +53,6 @@ h4 {
     letter-spacing: -1.28px;
     line-height: 66.523%;
 }
-
 
 main div.custom-checkbox input {
     display: none;
@@ -103,7 +103,7 @@ main h5 {
 
 main div.content_date_time {
     display: flex;
-    gap:40px;
+    gap: 40px;
     margin-inline-start: 4.3em;
     margin-block-start: 1.3em;
 }
@@ -128,6 +128,7 @@ main div.calendar_image {
     margin-top: -19px;
     margin-left: 129px;
 }
+
 main div.clock_image {
     margin-top: -24px;
     margin-left: 49px;

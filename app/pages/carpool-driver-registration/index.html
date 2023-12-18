@@ -12,78 +12,97 @@
 
 <body>
     <header>
-        <img src="/app/pages/images/logo Foto.jpg" alt="Logo do App Caronas" id="fotoo"/>
+        <img src="/app/pages/images/logo Foto.jpg" alt="Logo do App Caronas" id="fotoo" />
         <h3>Carona</h3>
     </header>
     <main>
         <div class="content">
-            <div class="contentInputs">
+            <div class="contents">
                 <div>
                     <div class="conteudo_busca">
                         <div>
                             <input class="origem" placeholder="Origem">
                         </div>
+
                         <div>
                             <input class="destino" placeholder="Destino">
                         </div>
+
                     </div>
+
                     <div class="origem_image">
-                        <img class="origem_image" src="/app/pages/images/Origem.png"/>
+                        <img class="origem_image" src="/app/pages/images/Origem.png" />
                     </div>
 
                     <div class="destino_image">
-                        <img class="destino_image" src="/app/pages/images/Destino.png"/>
+                        <img class="destino_image" src="/app/pages/images/Destino.png" />
                     </div>
 
                     <div class="indicacao_image">
                         <img class="indicacao_image" src="/app/pages/images/indicação.png" />
                     </div>
+
                     <fieldset>
+
+                        <h5>Partida/Valor</h5>
+
+                        <div class="content_date_time">
+                            <input class="time" placeholder="19:00" />
+                            <input class="valor_desejado" placeholder="Valor Desejado" />
+                        </div>
+
                         <div>
-                            <h5>Partida/Valor</h5>
-                            <div class="content_date_time">
-                                <input class="time" placeholder="19:00" />
-                                <input class="valor_desejado" placeholder="Valor Desejado" />
-                            </div>
-                            <div>
-                                <input class="calendar" placeholder="Seg, 06 de nov" />
-                            </div>
-                            <div class="cifrao_image">
-                                <img src="/app/pages/images/Cifrao.png" />
-                            </div>
-                            <div class="clock_image">
-                                <img src="/app/pages/images/clock.png" />
-                            </div>
-                            <div class="calendar_image">
-                                <img src="/app/pages/images/Calendar.png" />
-                            </div>
+                            <input class="calendar" placeholder="Seg, 06 de nov" />
+                        </div>
+
+                        <div class="cifrao_image">
+                            <img src="/app/pages/images/Cifrao.png" />
+                        </div>
+
+                        <div class="clock_image">
+                            <img src="/app/pages/images/clock.png" />
+                        </div>
+
+                        <div class="calendar_image">
+                            <img src="/app/pages/images/Calendar.png" />
+                        </div>
+
                     </fieldset>
                 </div>
+
                 <div class="check">
                     <h4>informações complementares</h4>
                     <br>
+
                     <div class="custom-checkbox">
                         <input id="checkbox-1" type="checkbox" checked>
                         <label for="checkbox-1">Bagagem</label>
                     </div>
+
                     <div class="custom-checkbox">
                         <input id="checkbox-2" type="checkbox" checked>
                         <label for="checkbox-2">Animais</label>
                     </div>
+
                 </div>
+
                 <br>
                 <div class="input">
                     <span>Informe número para contato</span>
                     <input type="number" placeholder="11983617799" />
                 </div>
+
                 <div class="input">
                     <span>Descreva</span>
                     <textarea row="10"></textarea>
                 </div>
+
             </div>
+
             <div>
                 <button onclick="navigate('/app/pages/look-for-a-ride')">Criar</button>
             </div>
+
         </div>
     </main>
 </body>
