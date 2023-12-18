@@ -8,17 +8,15 @@ main {
     padding-bottom: 135px;    
    min-height: 68vh;
 }
-header {
+header{
     text-align: center;
     color: #FFA500;
     font-size: 25px;
     margin-top: 40px;
 }
-
 header img {
     width: 80px;
-}
-
+} 
 main div.content {
     display: flex;
     flex-direction: column;
@@ -42,6 +40,5 @@ main div.links {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    
 }
 

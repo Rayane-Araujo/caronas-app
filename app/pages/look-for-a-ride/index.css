@@ -7,11 +7,13 @@ main {
     padding-bottom: 80px;
 }
 
-header {
+header header img {
     text-align: center;
     color: #FFA500;
     font-size: 20px;
     margin-top: 40px;
+
+    
 }
 
 header img {
