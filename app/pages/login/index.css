@@ -30,7 +30,7 @@ main div.content {
     padding-left: 28px;
     padding-right: 28px;
 }
-main div.content div.contentInputs {
+main div.content div.content_inputs {
     display: flex;
     flex-direction: column;
     align-items: center;
