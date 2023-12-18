@@ -1,239 +1,239 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 header{
-    text-align: center;
-    color: #FFA500;
-    font-size: 20px;
-    margin-top: 40px;
+  text-align: center;
+  color: #FFA500;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
 header img {
-    width: 80px;
+  width: 80px;
 }
 
 main div textarea {
-    border-color: #FFA500;
-    padding: 40px;
-    text-align: start;
-    border-radius: 4px;
+  border-color: #FFA500;
+  padding: 40px;
+  text-align: start;
+  border-radius: 4px;
 }
 
 main div.conteudo_busca {
-    display: flex;
-    flex-direction: column;
-    height: 51px;
-    margin-inline-start: 1.3em;
-    gap: 6px;
-    margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 51px;
+  margin-inline-start: 1.3em;
+  gap: 6px;
+  margin-top: 0px;
 }
 
 main input.origem {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 219px;
-    border-color: #d9d9d9;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 219px;
+  border-color: #d9d9d9;
 }
 
 main input.destino {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 219px;
-    border-color: #d9d9d9;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 219px;
+  border-color: #d9d9d9;
 }
 
 main div.origem_image {
-    margin-top: -49px;
-    margin-left: 0px;
+  margin-top: -49px;
+  margin-left: 0px;
 }
 
 main div img.origem_image {
-    width: 15px;
+  width: 15px;
 }
 
 main div img.destino_image {
-    width: 15px;
+  width: 15px;
 
 }
 
 main div.destino_image {
-    margin-top: 4px;
-    margin-left: -2px;
+  margin-top: 4px;
+  margin-left: -2px;
 }
 
 main div.indicacao_image {
-    margin-top: -39px;
-    margin-left: 252px;
+  margin-top: -39px;
+  margin-left: 252px;
 }
 
 main div img.indicacao_image {
-    width: 30px;
+  width: 30px;
 
 }
 
 main div.content_legenda {
-    display: flex;
-    flex-direction: row;
-    color: #6e6e6e;
-    font-family: 'Itim', cursive;
-    font-size: 13px;
-    gap: 13px;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: #6e6e6e;
+  font-family: 'Itim', cursive;
+  font-size: 13px;
+  gap: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 img.content_legenda {
-    width: 15px;
+  width: 15px;
 
 }
 
 main div.content_loupe {
-    display: flex;
-    flex-direction: row;
-    color: #6e6e6e;
-    font-family: 'Itim', cursive;
-    font-size: 13px;
-    gap: 2px;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    margin-left: 100px;
-    margin-top: 17px;
+  display: flex;
+  flex-direction: row;
+  color: #6e6e6e;
+  font-family: 'Itim', cursive;
+  font-size: 13px;
+  gap: 2px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin-left: 100px;
+  margin-top: 17px;
 }
 
 img.content_loupe {
-    width: 18px;
+  width: 18px;
 }
 
 main div.content_time_date {
-    display: flex;
-    gap: 5px;
-    margin-top: 20px;
-    margin-left: 40px;
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 img.content_time_date {
-    width: 15px;
+  width: 15px;
 }
 
 main input.relogio {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 40px;
-    border-color: #d9d9d9;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 40px;
+  border-color: #d9d9d9;
 }
 
 main div.arrow {
-    margin-top: -2px;
+  margin-top: -2px;
 }
 
 main input.calendario {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 60px;
-    border-color: #d9d9d9;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 60px;
+  border-color: #d9d9d9;
 }
 
 main div.content_calendario {
-    margin-top: 20px;
-    margin-left: 24px;
+  margin-top: 20px;
+  margin-left: 24px;
 
 }
 
 main div.cc {
-    display: flex;
-    margin-left: 30px;
-    gap: 5px;
+  display: flex;
+  margin-left: 30px;
+  gap: 5px;
 }
 
 main fieldset.borda_acesso {
-    border: 1px solid #FFA500;
-    width: 284px;
-    margin-top: 32px;
-    padding: 12px;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-    border-radius: 12px;
+  border: 1px solid #FFA500;
+  width: 284px;
+  margin-top: 32px;
+  padding: 12px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 12px;
 
 }
 
 main div.content_nome {
-    display: flex;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    color: #6e6e6e;
-    gap: 10px;
-    margin-top: -12px;
-    margin-left: 45px;
+  display: flex;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #6e6e6e;
+  gap: 10px;
+  margin-top: -12px;
+  margin-left: 45px;
 }
 
 img.content_nome {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 main div.foto {
-    margin-top: 6px;
-    margin-left: -288px;
+  margin-top: 6px;
+  margin-left: -288px;
 }
 
 img.foto {
-    width: 50px;
+  width: 50px;
 }
 
 main div.content_options {
-    display: flex;
-    gap: 5px;
-    margin-left: 45px;
-    margin-top: -39px;
-    font-family: 'Inter', sans-serif;
-    color: #6e6e6e;
-    font-weight: 500;
+  display: flex;
+  gap: 5px;
+  margin-left: 45px;
+  margin-top: -39px;
+  font-family: 'Inter', sans-serif;
+  color: #6e6e6e;
+  font-weight: 500;
 }
 
 img.content_options {
-    width: 15px;
+  width: 15px;
 }
 
 main div.valor {
-    margin-left: -3px;
+  margin-left: -3px;
 }
 
 img.valor1 {
-    margin-left: 31px;
-    width: 16px;
+  margin-left: 31px;
+  width: 16px;
 }
 
 main div.rect {
-    margin-left: 45px;
-    margin-top: 7px;
+  margin-left: 45px;
+  margin-top: 7px;
 }
 
 main div.foto1 {
-    margin-top: 6px;
-    margin-left: -257px;
+  margin-top: 6px;
+  margin-left: -257px;
 }
 
 main div.foto2 {
-    margin-top: 8px;
-    margin-left: -275px;
+  margin-top: 8px;
+  margin-left: -275px;
 }
 
 img.foto2 {
-    width: 55px;
+  width: 55px;
 }
 
 main div.foto3 {
-    margin-top: 7px;
-    margin-left: -262px;
+  margin-top: 7px;
+  margin-left: -262px;
 }
