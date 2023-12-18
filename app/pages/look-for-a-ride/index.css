@@ -7,12 +7,11 @@ main {
     padding-bottom: 80px;
 }
 
- header {
+header {
     text-align: center;
     color: #FFA500;
     font-size: 20px;
     margin-top: 40px;
-    
 }
 
 header img {
@@ -25,6 +24,7 @@ main div textarea {
     text-align: start;
     border-radius: 4px;
 }
+
 main div.conteudo_busca {
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@ main div.conteudo_busca {
     gap: 6px;
     margin-top: 0px;
 }
+
 main input.origem {
     border-left: none;
     border-right: none;
@@ -40,6 +41,7 @@ main input.origem {
     width: 219px;
     border-color: #d9d9d9;
 }
+
 main input.destino {
     border-left: none;
     border-right: none;
@@ -47,27 +49,25 @@ main input.destino {
     width: 219px;
     border-color: #d9d9d9;
 }
+
 main div.origem_image {
     margin-top: -49px;
     margin-left: 0px;
 }
 
 main div img.origem_image {
-   width: 15px;
-
-} 
-
+    width: 15px;
+}
 
 main div img.destino_image {
     width: 15px;
- 
- } 
+
+}
 
 main div.destino_image {
     margin-top: 4px;
     margin-left: -2px;
 }
-
 
 main div.indicacao_image {
     margin-top: -39px;
@@ -76,8 +76,8 @@ main div.indicacao_image {
 
 main div img.indicacao_image {
     width: 30px;
- 
- } 
+
+}
 
 main div.content_legenda {
     display: flex;
@@ -90,9 +90,9 @@ main div.content_legenda {
     font-family: 'Inter', sans-serif;
 }
 
- img.content_legenda  {
+img.content_legenda {
     width: 15px;
-  
+
 }
 
 main div.content_loupe {
@@ -114,7 +114,7 @@ img.content_loupe {
 
 main div.content_time_date {
     display: flex;
-    gap:5px;
+    gap: 5px;
     margin-top: 20px;
     margin-left: 40px;
 }
@@ -130,6 +130,7 @@ main input.relogio {
     width: 40px;
     border-color: #d9d9d9;
 }
+
 main div.arrow {
     margin-top: -2px;
 }
@@ -163,14 +164,15 @@ main fieldset.borda_acesso {
     border-left: none;
     border-bottom: none;
     border-radius: 12px;
-    
+
 }
+
 main div.content_nome {
     display: flex;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     color: #6e6e6e;
-    gap:10px;
+    gap: 10px;
     margin-top: -12px;
     margin-left: 45px;
 }
@@ -235,5 +237,3 @@ main div.foto3 {
     margin-top: 7px;
     margin-left: -262px;
 }
-
-
