@@ -75,3 +75,23 @@ main div.image_indication {
 main div img.image_indication  {
   width: 30px;
 }
+
+main div.subtitle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 15px;
+  color: #6E6E6E;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin-left: -93px;
+}
+
+main div.driver {
+  display: flex;
+  gap: 5px;
+}
+
+main div img.subtitle_image {
+  width: 15px;
+}
