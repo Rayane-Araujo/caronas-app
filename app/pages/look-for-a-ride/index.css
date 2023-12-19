@@ -50,12 +50,12 @@ main input.destiny {
 }
 
 main div.origin_image {
-  margin-top: -68px;
-  margin-left: 0px;
+  margin-top: -72px;
+  margin-left: -3px;
 }
 
 main div img.origin_image {
-  width: 15px;
+  width: 18px;
   margin-top: 10px;
 }
 
