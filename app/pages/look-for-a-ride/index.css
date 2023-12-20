@@ -95,3 +95,12 @@ main div.driver {
 main div img.subtitle_image {
   width: 15px;
 }
+
+main div.list_ride{
+  width: 100%;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0px 28px;
+}
