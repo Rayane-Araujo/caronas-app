@@ -6,6 +6,27 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+(async () => {
+  if ((await knex.schema.hasTable("userrs")) == false) {
+    await knex.schema.createTable("users", function (table) {
+      table.increments("id").primary();
+      table.string("name");
+      table.string("email");
+      table.string("telephone");
+      table.date("date");
+    });
+
+    console.log("criado a tabela users");
+  }
+})
+
+
+
+
+
+
+
 app.listen("3333", function () {
   console.log("server rodando");
 });
