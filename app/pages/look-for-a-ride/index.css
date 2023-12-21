@@ -87,6 +87,12 @@ main div.subtitle {
   margin-left: -93px;
 }
 
+
+main div.requester {
+  display: flex;
+  gap: 5px;
+}
+
 main div.driver {
   display: flex;
   gap: 5px;

@@ -112,7 +112,10 @@ div.item_ride_available div.item_ride_columm_details .ajust_text{
   align-items: center;
 }
 div.item_ride_available div.item_ride_columm_details .ajust_text span{
-  color: red;
+  color: #6E6E6E;
+  font-family: 'Inter', cursive;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 div.item_ride_available div.item_ride_columm_arrow {
