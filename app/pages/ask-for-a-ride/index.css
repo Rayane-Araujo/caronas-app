@@ -15,7 +15,7 @@ header {
     margin-top: 40px;
 }
 
-img header {
+header img {
     width: 80px;
 }
 
@@ -172,7 +172,7 @@ main div.destino_image {
     margin-left: -2px;
 }
 
-img.destino_image {
+main div img.destino_image {
     width: 16px;
 }
 
@@ -181,6 +181,7 @@ main div.indicacao_image {
     margin-left: 252px;
 }
 
-img.indicacao_image {
+main div img.indicacao_image {
     width: 30px;
 }
+
