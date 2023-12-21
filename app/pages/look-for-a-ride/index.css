@@ -103,7 +103,7 @@ main div img.subtitle_image {
 }
 
 main div.list_ride{
-  width: 100%;
+  width: 50vh;
   gap: 18px;
   display: flex;
   flex-direction: column;
