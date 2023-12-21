@@ -25,7 +25,7 @@ main div.content {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 6 px;
+    margin-top: 6px;
     padding-left: 28px;
     padding-right: 28px;
 }
@@ -134,7 +134,7 @@ main div.clock_image {
     margin-left: 44px;
 }
 
-main div.conteudo_busca {
+main div.content_search {
     display: flex;
     flex-direction: column;
     height: 51px;
@@ -142,7 +142,7 @@ main div.conteudo_busca {
     gap: 6px;
 }
 
-main input.origem {
+main input.origin {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -150,7 +150,7 @@ main input.origem {
     border-color: #d9d9d9;
 }
 
-main input.destino {
+main input.destiny {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -158,30 +158,30 @@ main input.destino {
     border-color: #d9d9d9;
 }
 
-main div.origem_image {
+main div.origin_image {
     margin-top: -49px;
     margin-left: 0px;
 }
 
-img.origem_image {
+img.origin_image {
     width: 15px;
 }
 
-main div.destino_image {
+main div.destiny_image {
     margin-top: 4px;
     margin-left: -2px;
 }
 
-main div img.destino_image {
+main div img.destiny_image {
     width: 16px;
 }
 
-main div.indicacao_image {
+main div.image_indication {
     margin-top: -47px;
     margin-left: 252px;
 }
 
-main div img.indicacao_image {
+main div img.image_indication {
     width: 30px;
 }
 
