@@ -124,16 +124,19 @@ main input.desired_value {
 
 main div input.calendar {
     margin-block-start: 1.3em;
-    margin-block-end: -13.33em;
-    margin-inline-start: 65px;
+    margin-inline-start: 66px;
     font-weight: 400;
     font-family: 'itim', cursive;
     letter-spacing: -1.28px;
     border-left: none;
     border-right: none;
     border-top: none;
-    width: 77px;
+    width: 89px;
     border-color: #d9d9d9;
+
+    /*transform: scaleX(-1); */
+    
+   
 }
 
 main div.coin_image {
@@ -201,3 +204,4 @@ main div.calendar_image {
     margin-top: 11px;
     margin-left: 47px;
 }
+
