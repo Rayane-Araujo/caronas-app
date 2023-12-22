@@ -28,16 +28,11 @@ main div.content {
     padding-left: 28px;
     padding-right: 28px;
 }
-
-main div.content div.contents {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-main div.check {
-    font-family: 'Itim', cursive;
-    color: #6e6e6e;
+main fieldset {
+    height: 150px;
+    border-radius: 16px;
+    width: 302px;
+    border: 1px solid #FFA500;
 }
 
 h4 {
@@ -77,18 +72,22 @@ main div.custom-checkbox input:checked+label:before {
     padding: 1px;
 }
 
+main div.check {
+    font-family: 'Itim', cursive;
+    color: #6e6e6e;
+}
+
+main div.content div.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 main div textarea {
     border-color: #FFA500;
     padding: 40px;
     text-align: start;
     border-radius: 4px;
-}
-
-main fieldset {
-    height: 150px;
-    border-radius: 16px;
-    width: 302px;
-    border: 1px solid #FFA500;
 }
 
 main h5 {
@@ -97,56 +96,6 @@ main h5 {
     font-weight: 400;
     font-family: 'itim', cursive;
     color: #6e6e6e;
-}
-
-main div.content_date_time {
-    display: flex;
-    gap: 40px;
-    margin-inline-start: 4.3em;
-    margin-block-start: 1.3em;
-}
-
-main input.time {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 40px;
-    border-color: #d9d9d9;
-}
-
-main input.desired_value {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 102px;
-    border-color: #d9d9d9;
-}
-
-main div input.calendar {
-    margin-block-start: 1.3em;
-    margin-inline-start: 66px;
-    font-weight: 400;
-    font-family: 'itim', cursive;
-    letter-spacing: -1.28px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    width: 89px;
-    border-color: #d9d9d9;
-
-    
-    
-   
-}
-
-main div.coin_image {
-    margin-top: -58px;
-    margin-left: 123px;
-}
-
-main div.clock_image {
-    margin-top: -27px;
-    margin-left: 45px;
 }
 
 main div.content_search {
@@ -200,8 +149,4 @@ img.image_indication {
     width: 30px;
 }
 
-main div.calendar_image {
-    margin-top: 11px;
-    margin-left: 47px;
-}
 
