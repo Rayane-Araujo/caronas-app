@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const knex = require("./database");
 const app = express();
 
 app.use(express.json());
@@ -8,7 +8,7 @@ app.use(cors());
 
 
 (async () => {
-  if ((await knex.schema.hasTable("userrs")) == false) {
+  if ((await knex.schema.hasTable("users")) == false) {
     await knex.schema.createTable("users", function (table) {
       table.increments("id").primary();
       table.string("name");
@@ -19,7 +19,7 @@ app.use(cors());
 
     console.log("criado a tabela users");
   }
-})
+})();
 
 
 
