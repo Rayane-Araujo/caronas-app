@@ -64,16 +64,8 @@ main button.redefinir {
     margin-top: -42px;
 }
 
-.oferecer:hover {
+main div .oferecer:hover .pedir:hover .procurar:hover {
     color: #FFA500;;
-}
-
-.pedir:hover {
-    color: #FFA500;;
-}
-
-.procurar:hover {
-    color: #FFA500;
 }
 
 main span {
