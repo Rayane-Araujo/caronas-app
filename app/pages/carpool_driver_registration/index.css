@@ -150,27 +150,3 @@ img.image_indication {
 }
 
 
-.inputs_with_clock_and_dollar {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.input_clock {
-    display: flex;
-    width: 40%;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-color: #d9d9d9;
-}
-
-.input_value {
-    display: flex;
-    width: 62%;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-color: #d9d9d9;
-    
-}
