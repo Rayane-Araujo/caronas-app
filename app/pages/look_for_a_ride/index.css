@@ -26,8 +26,8 @@ main div.content div.contents {
 main div.content_search {
   display: flex;
   flex-direction: column;
-  height: 51px;
-  margin-inline-start: 1.3em;
+  height: 82px;
+  margin-inline-start: 4.3em;
   gap: 6px;
   margin-top: -22px;
 }
@@ -49,8 +49,8 @@ main input.destiny {
 }
 
 main div.origin_image {
-  margin-top: -72px;
-  margin-left: -3px;
+  margin-top: -91px;
+  margin-left: 48px;
 }
 
 main div img.origin_image {
@@ -59,8 +59,8 @@ main div img.origin_image {
 }
 
 main div.destiny_image {
-  margin-top: -11px;
-  margin-left: -2px;
+  margin-top: -2px;
+  margin-left: 48px;
 }
 
 main div img.destiny_image {
@@ -68,8 +68,8 @@ main div img.destiny_image {
 }
 
 main div.image_indication {
-  margin-top: -56px;
-  margin-left: 252px;
+  margin-top: -44px;
+  margin-left: 298px;
 }
 
 main div img.image_indication  {
@@ -84,7 +84,7 @@ main div.subtitle {
   color: #6E6E6E;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  margin-left: -93px;
+  margin-left: 35px;
 }
 
 
