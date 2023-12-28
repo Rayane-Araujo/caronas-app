@@ -115,7 +115,7 @@ main div.list_ride{
 main div.image_span_match {
   display: flex;
   margin-top: 10px;
-  padding: 0% 36%;
+  justify-content: center;
   gap: 1px;
   font-family: 'inter', sans-serif;
   font-weight: 500;
@@ -123,23 +123,36 @@ main div.image_span_match {
   color: #6E6E6E;
 }
 
-main img.image_loupe {
-  width: 22px;
-}
-
-main div.image_clock_with_inputs_with_images_arrows {
+.images_inputs_clock_and_calendar {
   display: flex;
-  padding: 3% 19%;
+  margin-top: 15px;
+  justify-content: center;
 }
 
-main input.input_clock_match {
-  width: 21%;
-  border-top: none;
+.image_with_input_clock {
+  display: flex;
+  gap: 5px;
+}
+
+.input_clock_match {
   border-left: none;
   border-right: none;
-  border-color: #E8E8E8;
+  border-top: none;
+  border-color: #d9d9d9;
+  width: 39px;
 }
 
-main img.arrow_inputs {
-  
+.image_with_input_calendar {
+  display: flex;
+  gap: 5px;
+  margin-left: 81px;
 }
+
+.input_calendar_match {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #d9d9d9;
+  width: 56px;
+}
+
