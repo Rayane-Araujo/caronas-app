@@ -111,3 +111,35 @@ main div.list_ride{
   margin-top: 30px;
   padding: 0px 28px;
 }
+
+main div.image_span_match {
+  display: flex;
+  margin-top: 10px;
+  padding: 0% 36%;
+  gap: 1px;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #6E6E6E;
+}
+
+main img.image_loupe {
+  width: 22px;
+}
+
+main div.image_clock_with_inputs_with_images_arrows {
+  display: flex;
+  padding: 3% 19%;
+}
+
+main input.input_clock_match {
+  width: 21%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #E8E8E8;
+}
+
+main img.arrow_inputs {
+  
+}
