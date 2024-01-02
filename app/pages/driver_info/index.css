@@ -3,7 +3,6 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 40px;
 }
  header {
     text-align: center;
@@ -96,7 +95,7 @@ main div.localizacao {
     font-size: 20px;
 }
 main div.localizacao1 {
-    margin-top: 38px;
+    margin-top: 84px;
     margin-left: 13px;
     font-weight: 400;
     letter-spacing: -2.71px;
