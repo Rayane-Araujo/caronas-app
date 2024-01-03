@@ -17,6 +17,7 @@ header img {
 
 h3 {
     letter-spacing: -1.5px;
+    padding: 0% 29%;
 }
 main div.content_valor {
     display: flex;
@@ -82,26 +83,28 @@ main div.bag {
 }
 main div.line {
     margin-top: 34px;
-    margin-left: -1px;
+    margin-left: -28px;
 
 }
 main div.localizacao {
     margin-top: -135px;
-    margin-left: 13px;
+    margin-left: -14px;
     font-weight: 400;
     letter-spacing: -2.71px;
     color: #6e6e6e;
     font-family: 'Itim', cursive;
     font-size: 20px;
+    display: grid;
 }
 main div.localizacao1 {
-    margin-top: 84px;
-    margin-left: 13px;
+    margin-top: 38px;
+    margin-left: -14px;
     font-weight: 400;
     letter-spacing: -2.71px;
     color: #6e6e6e;
     font-family: 'Itim', cursive;
     font-size: 20px;
+    display: grid;
 }
 
 img.whatsapp {
