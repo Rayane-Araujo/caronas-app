@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     justify-content: normal;
     align-items: center;
-    padding-bottom: 80px;    
+      
 }
 
 header {
@@ -27,6 +27,10 @@ main div.content_inputs {
     flex-direction: column;
     align-items: center;
     gap: 30px;   
+}
+
+main div.button_register {
+    margin-top: 4%;
 }
 
 
