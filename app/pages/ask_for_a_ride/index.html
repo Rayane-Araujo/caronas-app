@@ -23,11 +23,11 @@
                     <div>
                     <div class="content_search">
                         <div>
-                            <input class="origin" placeholder="Origem">
+                            <input class="origin" placeholder="Origem" id="origin">
                         </div>
     
                         <div>
-                            <input class="destiny" placeholder="Destino">
+                            <input class="destiny" placeholder="Destino" id="destiny">
                         </div>
                     </div>
     
@@ -47,8 +47,8 @@
                         <h5>Partida</h5>
     
                         <div class="content_date_time">
-                            <input class="time" placeholder="19:00" />
-                            <input class="date" placeholder="Seg, 06 de Nov" />
+                            <input class="time" placeholder="19:00"/>
+                            <input class="date" placeholder="Seg, 06 de Nov" id="date"/>
                         </div>
     
                         <div class="calendar_image">
@@ -66,12 +66,12 @@
                     <br>
     
                     <div class="custom-checkbox">
-                        <input id="checkbox-1" type="checkbox" checked>
+                        <input id="checkbox1" type="checkbox" checked>
                         <label for="checkbox-1">Bagagem</label>
                     </div>
     
                     <div class="custom-checkbox">
-                        <input id="checkbox-2" type="checkbox" checked>
+                        <input id="checkbox2" type="checkbox" checked>
                         <label for="checkbox-2">Animais</label>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
 
                 <div class="input">
                     <span>Informe número para contato</span>
-                    <input type="number" placeholder="11983617799" />
+                    <input type="number" placeholder="11983617799" id="number"/>
                 </div>
 
                 <div class="input">
@@ -89,10 +89,10 @@
             </div>
 
             <div>
-                <button onclick="navigate('../look_for_a_ride')">Criar</button>
+                <button>Criar</button>
             </div>
         </div>
-
+        <script src="./script.js"></script>
     </main>
 </body>
 

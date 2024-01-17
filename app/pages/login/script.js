@@ -1,25 +1,16 @@
-
-
-
 document.querySelector("button").addEventListener("click", function() {
     let valueInputEmail = document.querySelector("#email").value;
     let valueInputPassword = document.querySelector("#password").value;
 
-    console.log(
-        valueInputEmail,
-        valueInputPassword,
-    )
-
     if (valueInputEmail === "") {
-        alert("Campo Input Email está vazio")
+        alert("Favor informar o email")
         return
     }
     if (valueInputPassword === "") {
-        alert("Campo Input Senha está vazio")
+        alert("favor informar a senha")
         return
     }
 
     navigate('../option');
 })
 
-// onclick="navigate('../option')"
