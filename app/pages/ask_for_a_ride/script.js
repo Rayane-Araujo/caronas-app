@@ -1,7 +1,10 @@
 document.querySelector("button").addEventListener("click", function() {
     let valueInputOrigin = document.querySelector("#origin").value;
     let valueInputDestiny = document.querySelector("#destiny").value;
+    let valueInputHour = document.querySelector("#hour").value;
     let valueInputDate = document.querySelector("#date").value;
+    let valueInputCheckbox1 = document.querySelector("#checkbox1").value;
+    let valueInputCheckbox2 = document.querySelector("#checkbox2").value;
     let valueInputNumber = document.querySelector("#number").value;
 
     if (valueInputOrigin === "") {
