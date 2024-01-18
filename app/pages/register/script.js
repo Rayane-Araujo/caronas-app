@@ -32,6 +32,6 @@ document.querySelector("button").addEventListener("click", function() {
         return
     }
 
-    navigate('../option');
+    navigate('../login');
 })
 
