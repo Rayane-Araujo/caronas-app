@@ -53,59 +53,112 @@ app.listen("3333", function () {
 
 /*--------------------------USERS----------------------------*/
 app.post("/users", function (req, res) {
-  res.send("Usuario Criado");
+  try {
+    res.status(201).json({ status: "ok"});
+  } catch (error) {
+    console.log(error)
+  }
+  
 });
 
 app.get("/users", function (req, res) {
-  res.send("GetAll");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.put("/users", function (req, res) {
-  res.send("Atualizando usuário");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.delete("/users", function (req, res) {
-  res.send("usuário deletado");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 /*--------------------------search----------------------------*/
 
 app.get("/search", function (req, res) {
-  res.send("pegando publicações");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 /* -------------------------offer---------------------------*/
 
 app.post("/offer", function (req, res) {
-  res.send("oferecer carona Criado");
+  try {
+    res.status(201).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.get("/offer", function (req, res) {
-  res.send("pegando ofertas de Carona");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.put("/offer", function (req, res) {
-  res.send("atualizando ofertas");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.delete("/offer", function (req, res) {
-  res.send("deletendo oferta");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 /* -------------------------request---------------------------*/
 
 app.post("/request", function (req, res) {
-  res.send("pedido de carona criado");
+  try {
+    res.status(201).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.get("/request", function (req, res) {
-  res.send("pegando os pedidos de carona");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.put("/request", function (req, res) {
-  res.send("atualizando pedido de carona");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.delete("/request", function (req, res) {
-  res.send("deletendo pedido de carona");
+  try {
+    res.status(200).json({ status: "ok" });
+  } catch (error) {
+    console.log(error);
+  }
 });
