@@ -1,6 +1,6 @@
 const knex = require('../database');
 
-class usersController{
+class searchController{
     async getAll(req, res) {
         try {
           const data = await knex("search");
@@ -14,4 +14,4 @@ class usersController{
 
 };
 
-module.exports = new usersController();
+module.exports = new searchController();

@@ -1,8 +1,8 @@
 const express = require('express');
 const knex = require("./database");
-const usersController = require("./controllers/offer");
-const usersController = require("./controllers/request");
-const usersController = require("./controllers/search");
+const offerController = require("./controllers/offer");
+const requestController = require("./controllers/request");
+const searchController = require("./controllers/search");
 const usersController = require("./controllers/users");
 const appRoutes = express.Router();
 
@@ -13,22 +13,22 @@ appRoutes.get("users", usersController.getAll);
 
 //ROTAS REQUEST
 
-appRoutes.post("/request", usersController.create);
-appRoutes.get("/request", usersController.getAll);
-appRoutes.put("request", usersController.put);
-appRoutes.delete("request", usersController.delete);
+appRoutes.post("/request", requestController.create);
+appRoutes.get("/request", requestController.getAll);
+appRoutes.put("request", requestController.put);
+appRoutes.delete("request", requestController.delete);
 
 
 //ROTAS SEARCH
 
-appRoutes.get("/search", usersController.getAll);
+appRoutes.get("/search", searchController.getAll);
 
 //ROTAS OFFER
 
-appRoutes.post("/offer", usersController.create);
-appRoutes.get("/offer", usersController.getAll);
-appRoutes.put("/offer", usersController.put);
-appRoutes.delete("/offer", usersController.delete);
+appRoutes.post("/offer", offerController.create);
+appRoutes.get("/offer", offerController.getAll);
+appRoutes.put("/offer", offerController.put);
+appRoutes.delete("/offer", offerController.delete);
 
 
 

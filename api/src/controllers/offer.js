@@ -1,6 +1,6 @@
 const knex = require('../database');
 
-class usersController{
+class offerController{
     async create(req, res) {
         try {
           const data = await knex("offer");
@@ -42,4 +42,4 @@ class usersController{
       };
 };
 
-module.exports = new usersController();
+module.exports = new offerController();
