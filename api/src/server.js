@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const knex = require("./database");
 const app = express();
+const appRoutes = require("./routes");
 
 app.use(express.json());
 app.use(cors());
@@ -48,146 +49,148 @@ app.use(cors());
   
 })();
 
+app.use("/", appRoutes);
+
 app.listen("3333", function () {
   console.log("server rodando");
 });
 
 /*--------------------------USERS----------------------------*/
-app.post("/users", async function (req, res) {
-  try {
-    const data = await knex("users");
+// app.post("/users", async function (req, res) {
+//   try {
+//     const data = await knex("users");
 
-    res.status(201).json({ status: "ok", dataRes: data});
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
+//     res.status(201).json({ status: "ok", dataRes: data});
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
   
-});
+// });
 
-app.get("/users", async function (req, res) {
-  try {
+// app.get("/users", async function (req, res) {
+//   try {
 
-    const data = await knex("users");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+//     const data = await knex("users");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.put("/users", async function (req, res) {
-  try {
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.put("/users", async function (req, res) {
+//   try {
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.delete("/users", async function (req, res) {
-  try {
-    const data = await knex("users");
+// app.delete("/users", async function (req, res) {
+//   try {
+//     const data = await knex("users");
 
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
 /*--------------------------search----------------------------*/
 
-app.get("/search", async function (req, res) {
-  try {
-    const data = await knex("search");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.get("/search", async function (req, res) {
+//   try {
+//     const data = await knex("search");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
 /* -------------------------offer---------------------------*/
 
-app.post("/offer", async function (req, res) {
-  try {
-    const data = await knex("offer");
-    res.status(201).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.post("/offer", async function (req, res) {
+//   try {
+//     const data = await knex("offer");
+//     res.status(201).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.get("/offer", async function (req, res) {
-  try {
-    const data = await knex("offer");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.get("/offer", async function (req, res) {
+//   try {
+//     const data = await knex("offer");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.put("/offer", async function (req, res) {
-  try {
-    const data = await knex("offer");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.put("/offer", async function (req, res) {
+//   try {
+//     const data = await knex("offer");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.delete("/offer", async function (req, res) {
-  try {
-    const data = await knex("offer");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.delete("/offer", async function (req, res) {
+//   try {
+//     const data = await knex("offer");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
 /* -------------------------request---------------------------*/
 
-app.post("/request", async function (req, res) {
-  try {
-    const data = await knex("request");
-    res.status(201).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.post("/request", async function (req, res) {
+//   try {
+//     const data = await knex("request");
+//     res.status(201).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.get("/request", async function (req, res) {
-  try {
-    const data = await knex("request");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.get("/request", async function (req, res) {
+//   try {
+//     const data = await knex("request");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.put("/request", async function (req, res) {
-  try {
-    const data = await knex("request");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.put("/request", async function (req, res) {
+//   try {
+//     const data = await knex("request");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
 
-app.delete("/request", async function (req, res) {
-  try {
-    const data = await knex("request");
-    res.status(200).json({ status: "ok" });
-  } catch (error) {
-    console.log(error);
-    res.status(400).json({ status: "ERROR", msg: error });
-  }
-});
+// app.delete("/request", async function (req, res) {
+//   try {
+//     const data = await knex("request");
+//     res.status(200).json({ status: "ok" });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).json({ status: "ERROR", msg: error });
+//   }
+// });
