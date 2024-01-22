@@ -8,6 +8,15 @@ document.querySelector("button").addEventListener("click", function() {
     let valueInputCheckbox2 = document.querySelector("#checkbox2").value;
     let valueInputNumber = document.querySelector("#number").value;
 
+    console.log(valueInputOrigin);
+    console.log(valueInputDestiny);
+    console.log(valueInputHour);
+    console.log(valueInputvalue);
+    console.log(valueInputDate);
+    console.log(valueInputCheckbox1);
+    console.log(valueInputCheckbox2);
+    console.log(valueInputNumber);
+
     if (valueInputOrigin === "") {
         alert("Favor informar a origem")
         return

@@ -3,6 +3,14 @@ document.querySelector("button").addEventListener("click", function() {
     let valueInputDestiny = document.querySelector("#destiny").value;
     let valueInputHour = document.querySelector("#hour").value;
     let valueInputDate = document.querySelector("#date").value;
+    let valueList = document.querySelector("#list").value;
+
+    console.log(valueInputOrigin);
+    console.log(valueInputDestiny);
+    console.log(valueInputHour);
+    console.log(valueInputDate);
+    console.log(valueList);
+    
 
     if (valueInputOrigin === "") {
         alert("Favor informar a origem")

@@ -6,6 +6,14 @@ document.querySelector("button").addEventListener("click", function() {
     let valueInputPassword = document.querySelector("#password").value;
     let valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
     
+    console.log(valueInputName);
+    console.log(valueInputEmail);
+    console.log(valueInputPhone);
+    console.log(valueInputDate);
+    console.log(valueInputPassword);
+    console.log(valueInputPasswordConfirm);
+    
+
 
     if (valueInputName === "") {
         alert("Favor informe o nome")
