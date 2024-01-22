@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para onde voce quer ir?</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="../navegation.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/Logo Carro.jpg" alt="Logo do App Caronas" />
+        <h3>Para onde você quer ir?</h3>
+    </header>
+
+    <main>
+        
+        <div class="content">
+            <div class="contents">
+                <div>
+                    <div class="content_search">
+                        <div>
+                            <input class="origin" placeholder="Origem" id="origin">
+                        </div>
+
+                        <div>
+                            <input class="destiny" placeholder="Destino" id="destiny">
+                        </div>
+
+                    </div>
+
+                    <div class="origin_image">
+                        <img class="origin_image" src="../images/Origem.png" />
+                    </div>
+
+                    <div class="destiny_image">
+                        <img class="destiny_image" src="../images/Destino.png" />
+                    </div>
+
+                    <div class="image_indication">
+                        <img class="image_indication" src="../images/indicação.png" />
+                    </div>
+
+        <div class="subtitle">
+            <div class="driver">
+                <span>Condutor</span>
+                <img class="subtitle_image" src="../images/icon_car.png" />
+            </div>
+
+            <div class="requester">
+                <span>Solicitante</span>
+                <img class="subtitle_image" src="../images/icon_user.png" />
+            </div>
+        </div>
+
+        <div class="image_span_match">
+            <img class="image_loupe" src="../images/loupe.png" alt="photo_loupe"/>
+            <span>Partida á(s)</span>
+        </div>
+
+       <div class="images_inputs_clock_and_calendar">
+        <div class="image_with_input_clock">
+            <img src="../images/icon_clock.png" alt="photo_clock"/>
+            <input class="input_clock_match" type="text" placeholder="13:00" id="hour">
+        </div>
+
+        <div class="arrows_left_and_right">
+            <img src="../images/arrow_left.png" alt="arrow_left"/>
+            <img src="../images/arrow_right.png" alt="arrow_right"/>
+        </div>
+
+        
+        <div class="image_with_input_calendar">
+            <img src="../images/Calendar.png" alt="photo_calendar">
+            <input class="input_calendar_match" type="text" placeholder="08/11/23" id="date">
+        </div>
+
+        <div class="arrows_left_and_right">
+            <img src="../images/arrow_left.png" alt="arrow_left"/>
+            <img src="../images/arrow_right.png" alt="arrow_right"/>
+        </div>
+       </div>
+        
+        <div class="list_ride">
+            <div class="item_ride_available" onclick="navigate('../driver_info')">
+                <div class="item_ride_columm_picture">
+                    <img src="../images/foto_condut.png" alt="foto_condutor"/>
+                </div>
+
+                <div class="item_ride_columm_details">
+                    <div class="ajust_text">
+                        <img src="../images/icon_car.png" alt="image_car"/>
+                        <span>Luiz Meira Santos</span>
+                    </div>
+
+                    <div class="details_hours_value">
+                        <div class="ajust_text">
+                            <img src="../images/icon_clock.png" alt="image_clock"/>
+                            <span>13:00</span>
+                        </div>
+                        <div class="ajust_text">
+                            <img src="../images/icon_dollar.png" alt="currency_icon"/>
+                            <span>R$ 110,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_ride_columm_arrow">
+                    <img src="../images/icon_arrow_right.png" alt="image_arrow_right"/>
+                </div>
+
+                <div class="item_ride_columm_show_hover">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="item_ride_available">
+                <div class="item_ride_columm_picture">
+                    <img src="../images/Ellipse 4.png" alt="foto_condutor"/>
+                </div>
+
+                <div class="item_ride_columm_details">
+                    <div class="ajust_text">
+                        <img src="../images/icon_car.png" alt="image_car"/>
+                        <span>José Francisco Toledo</span>
+                    </div>
+
+                    <div class="details_hours_value">
+                        <div class="ajust_text">
+                            <img src="../images/icon_clock.png" alt="image_clock"/>
+                            <span>13:00</span>
+                        </div>
+                        <div class="ajust_text">
+                            <img src="../images/icon_dollar.png" alt="currency_icon"/>
+                            <span>R$ 80,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_ride_columm_arrow">
+                    <img src="../images/icon_arrow_right.png" alt="image_arrow_right"/>
+                </div>
+
+                <div class="item_ride_columm_show_hover">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="item_ride_available">
+                <div class="item_ride_columm_picture">
+                    <img src="../images/Renan_foto.png" alt="photo_driver"/>
+                </div>
+
+                <div class="item_ride_columm_details" onclick="navigate('../user_info')">
+                    <div class="ajust_text">
+                        <img src="../images/icon_user.png" alt="image_car"/>
+                        <span>Renan Gonçalves Souza</span>
+                    </div>
+
+                    <div class="details_hours_value">
+                        <div class="ajust_text">
+                            <img src="../images/icon_clock.png" alt="image_clock"/>
+                            <span>13:00</span>
+                        </div>
+                        <div class="ajust_text">
+                            <img src="../images/icon_dollar.png" alt="currency_icon"/>
+                            <span>R$ 78,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_ride_columm_arrow">
+                    <img src="../images/icon_arrow_right.png" alt="image_arrow_right">
+                </div>
+
+                <div class="item_ride_columm_show_hover">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="item_ride_available">
+                <div class="item_ride_columm_picture">
+                    <img src="../images/fabricio.png" alt="photo_driver"/>
+                </div>
+
+                <div class="item_ride_columm_details">
+                    <div class="ajust_text">
+                        <img src="../images/icon_user.png" alt="image_car"/>
+                        <span>Fabricio Cesar Oliveira</span>
+                    </div>
+
+                    <div class="details_hours_value">
+                        <div class="ajust_text">
+                            <img src="../images/icon_clock.png" alt="image_clock"/>
+                            <span>13:00</span>
+                        </div>
+                        <div class="ajust_text">
+                            <img src="../images/icon_dollar.png" alt="currency_icon"/>
+                            <span>R$ 75,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_ride_columm_arrow">
+                    <img src="../images/icon_arrow_right.png" alt="image_arrow">
+                </div>
+
+                <div class="item_ride_columm_show_hover">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </main>
+</body>
+
+</html>
