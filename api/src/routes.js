@@ -8,13 +8,13 @@ const appRoutes = express.Router();
 
 // ROTAS USERS
 appRoutes.post("/users", usersController.create);
-appRoutes.get("users", usersController.getAll);
-appRoutes.delete("users", usersController.delete);
+appRoutes.get("/users", usersController.getAll);
+appRoutes.delete("/users", usersController.delete);
 
 //ROTAS REQUEST
 appRoutes.post("/request", requestController.create);
 appRoutes.get("/request", requestController.getAll);
-appRoutes.put("request", requestController.put);
+appRoutes.put("/request", requestController.put);
 appRoutes.delete("request", requestController.delete);
 
 

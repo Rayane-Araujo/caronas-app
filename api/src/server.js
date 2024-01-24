@@ -15,6 +15,7 @@ app.use(cors());
       table.string("email");
       table.string("telephone");
       table.date("date_birth");
+      table.string("password");
     });
 
     console.log("criado a tabela users");
