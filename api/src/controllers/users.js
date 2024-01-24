@@ -5,10 +5,12 @@ class usersController{
         try {
       
           const data = await knex("users");
-          res.status(200).json({ status: "ok" });
+          res.status(200).json({ status: "ok", dataRes: data });
+          console.log(data);
         } catch (error) {
           console.log(error);
           res.status(400).json({ status: "ERROR", msg: error });
+          
         }
     }
     

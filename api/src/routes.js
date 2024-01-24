@@ -10,6 +10,7 @@ const appRoutes = express.Router();
 
 appRoutes.post("/users", usersController.create);
 appRoutes.get("users", usersController.getAll);
+appRoutes.delete("users", usersController.delete);
 
 //ROTAS REQUEST
 
