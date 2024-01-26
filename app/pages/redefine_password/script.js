@@ -1,39 +1,40 @@
 
-
-document.querySelector("#sendCode").addEventListener("click", function () {
+document.querySelector("#sendCode").addEventListener("click",function() {
     let valueInputEmail = document.querySelector("#email").value;
+   
+   console.log({
+    email: valueInputEmail,
+});
 
-    console.log(valueInputEmail);
-
-
-    if (valueInputEmail === "") {
-        alert("Favor informar o email")
-        return
-    }
+ if (valueInputEmail =="") {
+    return alert("Informe o email para envio do código");
+ }
 })
 
-document.querySelector("#redefine").addEventListener("click", function () {
-    let valueInputEmailCode = document.querySelector("#emailCode").value;
+document.querySelector("#redefine").addEventListener("click",function() {
+    let valueInputemailCode = document.querySelector("#emailCode").value;
     let valueInputPassword = document.querySelector("#password").value;
     let valueInputPasswordConfirm = document.querySelector("#passwordConfirm").value;
+   
+   console.log({
+    emailCode: valueInputemailCode,
+    password: valueInputPassword,
+    passwordConfirm: valueInputPasswordConfirm,
+});
 
-    console.log(valueInputEmailCode);
-    console.log(valueInputPassword);
-    console.log(valueInputPasswordConfirm);
+ if (valueInputemailCode =="") {
+    return alert("Informe o código enviado por email");
+ }
+ if (valueInputPassword =="") {
+    return alert("Informe nova senha");
+ }
+ if (valueInputPasswordConfirm =="") {
+    return alert("confirme a nova senha");
+ }
 
-    if (valueInputEmailCode === "") {
-        alert("Favor informar o código")
-        return
-    }
-    if (valueInputPassword === "") {
-        alert("Favor informar nova senha")
-        return
-    }
-    if (valueInputPasswordConfirm === "") {
-        alert("Favor confirmar nova senha")
-        return
-    }
-
-    navigate('../login');
+ navigate('../login');
 })
+
+
+
 
