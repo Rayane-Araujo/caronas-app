@@ -31,7 +31,7 @@ appRoutes.delete("/offer/:id", offerController.delete);
 // ROTAS LOGIN
 
 appRoutes.post("/login", loginController.create);
-appRoutes.get("/login", loginController.getAll);
+
 
 
 

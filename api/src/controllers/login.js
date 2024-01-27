@@ -1,22 +1,31 @@
 const knex = require("../database");
 
-class loginController{
-    async create(req, res) {
-        try {
-            
+class loginController {
+  async create(req, res) {
+    try {
+      const user = await knex("users")
+        .where({ email: req.body.valueInputEmail })
+        .first();
 
-            const user = await knex("users").where({ email: req.body.userEmail });
 
-            if(req.body.valueInputEmail)
-            
-          res.status(200).json({ status: "ok", dataRes: data });
-          console.log(data);
-        } catch (error) {
-          console.log(error);
-          res.status(400).json({ status: "ERROR", msg: error });
-        }
+      if (user.length === 0) {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "usuário nao cadastrado"
+        });
+      }
+
+      const data = {
+        email: req.body.valueInputEmail,
+        password: req.body.valueInputPassword,
+      };
+
+      res.status(200).json({ status: "OK", dataRes: data  });
+    } catch (error) {
+      console.log(error);
+      res.status(400).json({ status: "ERROR", msg: "usuário nao cadastrado" });
     }
- 
+  }
 }
 
 module.exports = new loginController();

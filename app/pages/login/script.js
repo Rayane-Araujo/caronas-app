@@ -15,6 +15,9 @@ document.querySelector("button").addEventListener("click", function() {
         valueInputEmail: valueInputEmail,
         valueInputPassword: valueInputPassword
     }
+        
+    axios.post("http://localhost:3333/login", formData)
+        
     .then(function (response) {
         // Lida com a resposta do servidor
         console.log(response.data);
