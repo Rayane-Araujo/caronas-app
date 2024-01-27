@@ -4,6 +4,7 @@ const offerController = require("./controllers/offer");
 const requestController = require("./controllers/request");
 const searchController = require("./controllers/search");
 const usersController = require("./controllers/users");
+const loginController = require("./controllers/login");
 const appRoutes = express.Router();
 
 // ROTAS USERS
@@ -27,7 +28,10 @@ appRoutes.get("/offer", offerController.getAll);
 appRoutes.put("/offer/:id", offerController.put);
 appRoutes.delete("/offer/:id", offerController.delete);
 
+// ROTAS LOGIN
 
+appRoutes.post("/login", loginController.create);
+appRoutes.get("/login", loginController.getAll);
 
 
 
