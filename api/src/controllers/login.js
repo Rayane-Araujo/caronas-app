@@ -11,7 +11,7 @@ class loginController {
       if (user.length === 0) {
         return res.status(400).json({
           status: "ERROR",
-          msg: "usuário nao cadastrado"
+          msg: "E-mail nao cadastrado"
         });
       }
 

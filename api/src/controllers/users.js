@@ -4,7 +4,7 @@ class usersController {
   async getAll(req, res) {
     try {
       const data = await knex("users");
-      res.status(200).json({ status: "ok", dataRes: data });
+      res.status(200).json({ status: "OK", dataRes: data });
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -14,7 +14,7 @@ class usersController {
 
   async create(req, res) {
     try {
-      res.status(200).json({ status: "ok" });
+      res.status(201).json({ status: "OK" });
 
       const data = {
         name: req.body.valueInputName,
@@ -37,7 +37,7 @@ class usersController {
 
       await knex("users").where("id", req.params.id).delete();
 
-      res.status(200).json({ status: "ok" });
+      res.status(200).json({ status: "OK" });
     } catch (error) {
       console.log(error);
       res.status(400).json({ status: "ERROR", msg: error });
