@@ -54,6 +54,7 @@ h4 {
     line-height: 66.523%;
 }
 
+
 main div.custom-checkbox input {
     display: none;
 }
@@ -79,10 +80,12 @@ main div.custom-checkbox input:checked+label:before {
     padding: 1px;
 }
 
+
+
+
 main div textarea {
     border-color: #FFA500;
-    padding: 40px;
-    text-align: start;
+    padding: 7px;
     border-radius: 4px;
 }
 

@@ -1,33 +1,39 @@
 document.querySelector("button").addEventListener("click", function() {
     let valueInputOrigin = document.querySelector("#origin").value;
     let valueInputDestiny = document.querySelector("#destiny").value;
-    let valueInputhour = document.querySelector("#hour").value;
-    let valueInputvalue = document.querySelector("#value").value;
+    let valueInputHour = document.querySelector("#hour").value;
     let valueInputDate = document.querySelector("#date").value;
-    let valueInputCheckbox1 = document.querySelector("#checkbox1").value;
-    let valueInputCheckbox2 = document.querySelector("#checkbox2").value;
-    let valueInputNumber = document.querySelector("#number").value;
+    let valueInputDesiredValue = document.querySelector("#value").value;
+    let valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
+    let valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
+    let valueInputNumberContact = document.querySelector("#number").value;
+    let valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
 
-    if (valueInputOrigin === "") {
-        alert("Favor informar a origem")
-        return
-    }
-    if (valueInputDestiny === "") {
-        alert("favor informar o destino desejado")
-        return
-    }
-    if (valueInputvalue === "") {
-        alert("favor informar o valor desejado")
-        return
-    }
-    if (valueInputDate === "") {
-        alert("favor informar a data desejada")
-        return
-    }
-    if (valueInputNumber === "") {
-        alert("favor informar o numero para contato")
-        return
+    console.log({
+        origin: valueInputOrigin,
+        destiny: valueInputDestiny,
+        hour: valueInputHour,
+        date: valueInputDate,
+        value: valueInputDesiredValue,
+        baggage: valueCheckBoxBaggage,
+        animals: valueCheckBoxAnimals,
+        numberContact: valueInputNumberContact,
+        textField: valueTextFieldDescribe,
+    })
+
+    if (valueInputOrigin ==""){
+        return alert("Informe sua origem de destino");
     }
 
-    navigate('../look_for_a_ride')
+    if (valueInputDestiny ==""){
+        return alert("Informe o destino desejado");
+    }
+
+    if (valueInputNumberContact ==""){
+        return alert("Informe numero para contato");
+    }
+ 
+
+    navigate("../look_for_a_ride");
+
 })
