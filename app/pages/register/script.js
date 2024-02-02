@@ -40,6 +40,22 @@ document.querySelector("button").addEventListener("click", function() {
         return
     }
 
-    navigate('../login');
+    //criar uma validação para certificar que a senha está igual//
+    const formData = {
+        valueInputName: valueInputName,
+        valueInputEmail: valueInputEmail,
+        valueInputPhone: valueInputPhone,
+        valueInputDate: valueInputDate,
+        valueInputPassword: valueInputPassword,
+    }
+    axios.post("http://localhost:3333/users", formData)
+    
+    .then(function (response){
+        console.log(response.data);
+    })
+    
+    .catch(function (error) {
+        console.log(error);
+    });
 })
 
