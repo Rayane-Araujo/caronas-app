@@ -14,6 +14,41 @@ class usersController {
 
   async create(req, res) {
     try {
+      if (!req.body.valueInputName || req.body.valueInputName == "") {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "O nome é obrigatório!",
+        });
+      };
+
+      if (!req.body.valueInputEmail || req.body.valueInputEmail == "") {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "O E-mail é obrigatório!",
+        })
+      };
+
+      if (!req.body.valueInputPhone || req.body.valueInputPhone == "") {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "O Telefone é obrigatório!",
+        })
+      };
+      
+      if (!req.body.valueInputDate || req.body.valueInputDate == "") { 
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "A Data é obrigatório!",
+        })
+      };
+
+      if (!req.body.valueInputPassword || req.body.valueInputPassword == "") {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "O password é obrigatório!",
+        })
+      };
+
       res.status(201).json({ status: "OK" });
 
       const data = {
