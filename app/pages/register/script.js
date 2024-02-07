@@ -6,17 +6,25 @@ document.querySelector("button").addEventListener("click", () => {
     const valueInputPassword = document.querySelector("#password").value;
     const valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
     
-
+    console.log({
+        name: valueInputName,
+        email: valueInputEmail,
+        phone: valueInputPhone,
+        date: valueInputDate,
+        password: valueInputPassword,
+        PasswordConfirm: valueInputPasswordConfirm,
+    })
+    
     if (valueInputName === "") {
-        alert("Favor informe o nome")
+        alert("Favor informe o nome");
         return
     }
     if (valueInputEmail === "") {
-        alert("Favor informe o email")
+        alert("Favor informe o email");
         return
     }
     if (valueInputPhone === "") {
-        alert("Favor informe o numero de telefone")
+        alert("Favor informe o numero de telefone");
         return
     }
     if (valueInputDate === "") {
@@ -24,11 +32,11 @@ document.querySelector("button").addEventListener("click", () => {
         return
     }
     if (valueInputPassword === "") {
-        alert("Favor informe a senha")
+        alert("Favor informe a senha");
         return
     }
     if (valueInputPasswordConfirm === "") {
-        alert("Favor informe a confirmação de senha")
+        alert("Favor informe a confirmação de senha");
         return
     }
 

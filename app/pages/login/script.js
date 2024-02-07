@@ -2,6 +2,11 @@ document.querySelector("button").addEventListener("click", function() {
     const valueInputEmail = document.querySelector("#email").value;
     const valueInputPassword = document.querySelector("#password").value;
 
+    console.log({
+        email: valueInputEmail,
+        password: valueInputPassword,
+    })
+
     if (valueInputEmail === "") {
         alert("Favor informar o email")
         return
