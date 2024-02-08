@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click", function() {
+document.querySelector("button").addEventListener("click", () => {
     const valueInputName = document.querySelector('#name').value;
     const valueInputEmail = document.querySelector("#email").value;
     const valueInputPhone = document.querySelector('#tel').value;
@@ -40,32 +40,24 @@ document.querySelector("button").addEventListener("click", function() {
         return
     }
 
-    if (valueInputPasswordConfirm != valueInputPassword) {
-        alert('as senhas não coincidem');
-        
-        document.querySelector('#password').value ='';
-        document.querySelector('#password_confirm').value ='';
-        document.querySelector('#password').focus();
-        return
-    }
-
-    navigate('../login');
-    
     const formData = {
         valueInputName: valueInputName,
         valueInputEmail: valueInputEmail,
         valueInputPhone: valueInputPhone,
         valueInputDate: valueInputDate,
-        valueInputPassword: valueInputPassword,
+        valueInputPassword: valueInputPassword
     }
+
     axios.post("http://localhost:3333/users", formData)
-    
-    .then(function (response){
+    .then(function (response) {
+        // Lida com a resposta do servidor
         console.log(response.data);
-    })
-    
-    .catch(function (error) {
-        console.log(error);
-    });
+      })
+      .catch(function (error) {
+        // Lida com erros de requisição
+        console.error(error);
+      });
+
+    navigate('../login');
 })
 
