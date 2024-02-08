@@ -7,7 +7,7 @@ document.querySelector("button").addEventListener("click", function() {
         password: valueInputPassword,
     })
 
-    if (valueInputEmail === "") {
+    if (valueInputEmail === "" ) {
         alert("Favor informar o email")
         return
     }
@@ -17,21 +17,18 @@ document.querySelector("button").addEventListener("click", function() {
     }
 
     const formData = {
-        valueInputEmail: valueInputEmail,
+        email: valueInputEmail,
         valueInputPassword: valueInputPassword
     }
-        
-    axios.post("http://localhost:3333/login", formData)
-        
-    .then(function (response) {
-        // Lida com a resposta do servidor
+    axios.post("http://localhost:3333/users", formData)
+    
+    .then(function (response){
         console.log(response.data);
-      })
-      .catch(function (error) {
-        // Lida com erros de requisição
-        console.error(error);
-      });
+    })
+    
+    .catch(function (error) {
+        console.log(error);
+    });
 
-    navigate('../option');
 })
 
