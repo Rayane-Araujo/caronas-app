@@ -40,7 +40,17 @@ document.querySelector("button").addEventListener("click", function() {
         return
     }
 
-    //criar uma validação para certificar que a senha está igual//
+    if (valueInputPasswordConfirm != valueInputPassword) {
+        alert('as senhas não coincidem');
+        
+        document.querySelector('#password').value ='';
+        document.querySelector('#password_confirm').value ='';
+        document.querySelector('#password').focus();
+        return
+    }
+
+    navigate('../login');
+    
     const formData = {
         valueInputName: valueInputName,
         valueInputEmail: valueInputEmail,

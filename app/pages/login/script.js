@@ -7,7 +7,7 @@ document.querySelector("button").addEventListener("click", function() {
         password: valueInputPassword,
     })
 
-    if (valueInputEmail === "") {
+    if (valueInputEmail === "" ) {
         alert("Favor informar o email")
         return
     }
@@ -15,6 +15,20 @@ document.querySelector("button").addEventListener("click", function() {
         alert("favor informar a senha")
         return
     }
-    navigate('../option');
+
+    const formData = {
+        email: valueInputEmail,
+        valueInputPassword: valueInputPassword
+    }
+    axios.post("http://localhost:3333/users", formData)
+    
+    .then(function (response){
+        console.log(response.data);
+    })
+    
+    .catch(function (error) {
+        console.log(error);
+    });
+
 })
 
