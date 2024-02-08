@@ -29,6 +29,8 @@ app.use(cors());
       table.dateTime("time");
       table.integer("price");
       table.date("date");
+      table.boolean("animals");
+      table.boolean("baggage");
       table.integer("telephone");
       table.string("description");
     });
