@@ -1,10 +1,10 @@
 document.querySelector("button").addEventListener("click", function() {
-    let valueInputName = document.querySelector('#name').value;
-    let valueInputEmail = document.querySelector("#email").value;
-    let valueInputPhone = document.querySelector('#tel').value;
-    let valueInputDate = document.querySelector('#date').value;
-    let valueInputPassword = document.querySelector("#password").value;
-    let valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
+    const valueInputName = document.querySelector('#name').value;
+    const valueInputEmail = document.querySelector("#email").value;
+    const valueInputPhone = document.querySelector('#tel').value;
+    const valueInputDate = document.querySelector('#date').value;
+    const valueInputPassword = document.querySelector("#password").value;
+    const valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
     
     console.log({
         name: valueInputName,

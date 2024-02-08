@@ -1,6 +1,6 @@
 document.querySelector("button").addEventListener("click", function() {
-    let valueInputEmail = document.querySelector("#email").value;
-    let valueInputPassword = document.querySelector("#password").value;
+    const valueInputEmail = document.querySelector("#email").value;
+    const valueInputPassword = document.querySelector("#password").value;
 
     console.log({
         email: valueInputEmail,
