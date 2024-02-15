@@ -68,8 +68,8 @@ class offerController{
     
     async getAll(req, res) {
         try {
-          const data = await knex("offer");
-          res.status(200).json({ status: "ok" });
+          const data = await knex("offerRide");
+          res.status(200).json({ status: "ok", daraRes: data });
         } catch (error) {
           console.log(error);
           res.status(400).json({ status: "ERROR", msg: error });
@@ -88,8 +88,17 @@ class offerController{
     
     async delete(req, res) {
         try {
-          const data = await knex("offer");
-          res.status(200).json({ status: "ok" });
+          const data = await knex("offerRide").where("id", req.params.id).first();
+
+          if (data === undefined) {
+            return res.status(400).json({
+              status: "ERROR",
+              msg: "Não encontrado!"
+            });
+          }
+          await knex("offerRide").where("id", req.params.id).delete();
+
+          res.status(200).json({ status: "OK" });
         } catch (error) {
           console.log(error);
           res.status(400).json({ status: "ERROR", msg: error });
