@@ -75,35 +75,6 @@ class offerController{
           res.status(400).json({ status: "ERROR", msg: error });
         }
     };
-    
-    async put(req, res) {
-        try {
-          const data = await knex("offer");
-          res.status(200).json({ status: "ok" });
-        } catch (error) {
-          console.log(error);
-          res.status(400).json({ status: "ERROR", msg: error });
-        }
-    };
-    
-    async delete(req, res) {
-        try {
-          const data = await knex("offerRide").where("id", req.params.id).first();
-
-          if (data === undefined) {
-            return res.status(400).json({
-              status: "ERROR",
-              msg: "Não encontrado!"
-            });
-          }
-          await knex("offerRide").where("id", req.params.id).delete();
-
-          res.status(200).json({ status: "OK" });
-        } catch (error) {
-          console.log(error);
-          res.status(400).json({ status: "ERROR", msg: error });
-        }
-      };
 };
 
 module.exports = new offerController();

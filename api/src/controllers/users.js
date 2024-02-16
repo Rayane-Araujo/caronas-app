@@ -65,19 +65,6 @@ class usersController {
       res.status(400).json({ status: "ERROR", msg: error });
     }
   }
-
-  async delete(req, res) {
-    try {
-      // const data = await knex("users").where("id", req.params.id).first();
-
-      await knex("users").where("id", req.params.id).delete();
-
-      res.status(200).json({ status: "OK" });
-    } catch (error) {
-      console.log(error);
-      res.status(400).json({ status: "ERROR", msg: error });
-    }
-  }
 }
 
 module.exports = new usersController();
