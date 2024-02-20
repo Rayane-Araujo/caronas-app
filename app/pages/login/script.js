@@ -18,7 +18,7 @@ document.querySelector("button").addEventListener("click", function() {
 
     const formData = {
         valueInputEmail: valueInputEmail,
-        valueInputPassword: valueInputPassword
+        valueInputPassword: valueInputPassword,
     }
         
     axios.post("http://localhost:3333/login", formData)
@@ -32,6 +32,6 @@ document.querySelector("button").addEventListener("click", function() {
         console.error(error);
       });
 
-    navigate('../option');
+    /* navigate('../option'); */
 })
 
