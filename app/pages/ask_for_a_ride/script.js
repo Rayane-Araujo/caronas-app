@@ -30,6 +30,25 @@ document.querySelector("button").addEventListener("click", function() {
     if (valueInputNumberContact ==""){
         return alert("Informe numero para contato");
     }
+
+    const formData = {
+        valueInputOrigin: valueInputOrigin,
+        valueInputDestiny: valueInputDestiny,
+        valueInputHour: valueInputHour,
+        valueInputDate: valueInputDate,
+        valueCheckBoxBaggage:  valueCheckBoxBaggage,
+        valueCheckBoxAnimals: valueCheckBoxAnimals,
+        valueInputNumberContact: valueInputNumberContact,
+        valueTextFieldDescribe: valueTextFieldDescribe
+    };
+
+    axios.post('http://localhost:3333/requestRide', formData)
+      .then(function (response) {
+        console.log("Success", response);
+      })
+      .catch(function (error) {
+        console.error("Error", error);
+      });
  
 
     navigate("../look_for_a_ride");
