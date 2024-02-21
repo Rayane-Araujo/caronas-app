@@ -32,7 +32,7 @@ document.querySelector("#redefine").addEventListener("click",function() {
     return alert("confirme a nova senha");
  }
 
- navigate('../login');
+ navigate('login');
 })
 
 

@@ -59,6 +59,6 @@ axios.post("http://localhost:3333/offer", formData)
     //Lida com erros da requisição
     console.error(error);
 })
-    /* navigate("../look_for_a_ride"); */
+    /* navigate("look_for_a_ride"); */
 
 })
