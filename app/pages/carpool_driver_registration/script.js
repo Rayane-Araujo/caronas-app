@@ -1,13 +1,13 @@
 document.querySelector("button").addEventListener("click", function() {
-    let valueInputOrigin = document.querySelector("#origin").value;
-    let valueInputDestiny = document.querySelector("#destiny").value;
-    let valueInputHour = document.querySelector("#hour").value;
-    let valueInputDate = document.querySelector("#date").value;
-    let valueInputDesiredValue = document.querySelector("#value").value;
-    let valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
-    let valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
-    let valueInputNumberContact = document.querySelector("#number").value;
-    let valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
+    const valueInputOrigin = document.querySelector("#origin").value;
+    const valueInputDestiny = document.querySelector("#destiny").value;
+    const valueInputHour = document.querySelector("#hour").value;
+    const valueInputDate = document.querySelector("#date").value;
+    const valueInputDesiredValue = document.querySelector("#value").value;
+    const valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
+    const valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
+    const valueInputNumberContact = document.querySelector("#number").value;
+    const valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
 
     console.log({
         origin: valueInputOrigin,
@@ -21,7 +21,7 @@ document.querySelector("button").addEventListener("click", function() {
         textField: valueTextFieldDescribe,
     })
 
-
+    
     if (valueInputOrigin ===""){
         alert("Informe sua origem de destino");
         return 
@@ -48,8 +48,6 @@ const formData = {
 	valueCheckBoxBaggage,
 	valueTextFieldDescribe,
 }
-
-
 
 axios.post("http://localhost:3333/offer", formData)
 
