@@ -3,37 +3,35 @@ const knex = require("../database");
 class loginController {
   async create(req, res) {
     try {
+      const { body } = req;
+
+      //buscando o usuario
       const user = await knex("users")
-        .where({ email: req.body.valueInputEmail })
+        .where({
+          email: body.valueInputEmail,
+        })
         .first();
 
-
-      if (user.length === 0) {
+      //usuario existe
+      if (user === undefined) {
         return res.status(400).json({
           status: "ERROR",
-          msg: "E-mail nao cadastrado"
+          msg: "E-mail nao cadastrado",
         });
       }
-      const pass = req.body.valueInputEmail;
-      const userPassword = await knex.select("password").from("users").where([req.body.valueInputEmail]);
-      console.log("eeee", userPassword, pass);
 
-      // if (userPassword ) {
-      //   return res.status(400).json({
-      //     status: "ERROR",
-      //     msg: "Senha incorreta"
-      //   });
-      // }
+      //valida senha
+      if (user.password !== body.valueInputPassword) {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "Senha invalida",
+        });
+      }
 
-      const data = {
-        email: req.body.valueInputEmail,
-        password: req.body.valueInputPassword,
-      };
-
-      res.status(200).json({ status: "OK", dataRes: data  });
+      res.status(200).json({ status: "OK" });
     } catch (error) {
       console.log(error);
-      res.status(400).json({ status: "ERROR", msg: "usuário nao cadastrado" });
+      res.status(400).json({ status: "ERROR", msg: "Usuário não cadastrado!" });
     }
   }
 }
