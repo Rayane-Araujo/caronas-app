@@ -48,8 +48,8 @@ document.querySelector("button").addEventListener("click", function (event) {
   axios.post('http://localhost:3333/request', formData)
     .then(function (response) {
       console.log("Success", response);
+      navigate("look_for_a_ride")
       alert('Carona solicitado com sucesso!')
-      navigate("/look_for_a_ride")
       
 
     })
