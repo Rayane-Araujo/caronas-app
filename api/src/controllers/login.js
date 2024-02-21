@@ -14,6 +14,16 @@ class loginController {
           msg: "E-mail nao cadastrado"
         });
       }
+      const pass = req.body.valueInputEmail;
+      const userPassword = await knex.select("password").from("users").where([req.body.valueInputEmail]);
+      console.log("eeee", userPassword, pass);
+
+      // if (userPassword ) {
+      //   return res.status(400).json({
+      //     status: "ERROR",
+      //     msg: "Senha incorreta"
+      //   });
+      // }
 
       const data = {
         email: req.body.valueInputEmail,
