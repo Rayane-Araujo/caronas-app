@@ -21,19 +21,46 @@ document.querySelector("button").addEventListener("click", function() {
         textField: valueTextFieldDescribe,
     })
 
-    if (valueInputOrigin ==""){
-        return alert("Informe sua origem de destino");
+
+    if (valueInputOrigin ===""){
+        alert("Informe sua origem de destino");
+        return 
     }
 
-    if (valueInputDestiny ==""){
-        return alert("Informe o destino desejado");
+    if (valueInputDestiny ===""){
+         alert("Informe o destino desejado");
+         return
     }
 
-    if (valueInputNumberContact ==""){
-        return alert("Informe numero para contato");
+    if (valueInputNumberContact ===""){
+         alert("Informe numero para contato");
+         return
     }
  
+const formData = {
+    valueInputOrigin,
+    valueInputDestiny,
+    valueInputDate,
+    valueInputHour,
+    valueInputDesiredValue,
+    valueInputNumberContact,
+	valueCheckBoxAnimals,
+	valueCheckBoxBaggage,
+	valueTextFieldDescribe,
+}
 
-    navigate("../look_for_a_ride");
+
+
+axios.post("http://localhost:3333/offer", formData)
+
+.then(function(response){
+    //Lida com a resposta do servidor
+    console.log(response.data);
+})
+.catch(function(error){
+    //Lida com erros da requisição
+    console.error(error);
+})
+    /* navigate("../look_for_a_ride"); */
 
 })
