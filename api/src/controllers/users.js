@@ -49,6 +49,17 @@ class usersController {
         })
       };
 
+      const user = await knex("users").where({email: req.body.valueInputEmail}).first();
+     
+      //valida se o usuário existe
+      if (user !== undefined) {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "E-mail já cadastrado!"
+        });
+      }
+ 
+
       res.status(201).json({ status: "OK" });
 
       const data = {
