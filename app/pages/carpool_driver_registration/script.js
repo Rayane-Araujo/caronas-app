@@ -1,13 +1,13 @@
 document.querySelector("button").addEventListener("click", function() {
-    let valueInputOrigin = document.querySelector("#origin").value;
-    let valueInputDestiny = document.querySelector("#destiny").value;
-    let valueInputHour = document.querySelector("#hour").value;
-    let valueInputDate = document.querySelector("#date").value;
-    let valueInputDesiredValue = document.querySelector("#value").value;
-    let valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
-    let valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
-    let valueInputNumberContact = document.querySelector("#number").value;
-    let valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
+    const valueInputOrigin = document.querySelector("#origin").value;
+    const valueInputDestiny = document.querySelector("#destiny").value;
+    const valueInputHour = document.querySelector("#hour").value;
+    const valueInputDate = document.querySelector("#date").value;
+    const valueInputDesiredValue = document.querySelector("#value").value;
+    const valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
+    const valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
+    const valueInputNumberContact = document.querySelector("#number").value;
+    const valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
 
     console.log({
         origin: valueInputOrigin,
@@ -21,19 +21,44 @@ document.querySelector("button").addEventListener("click", function() {
         textField: valueTextFieldDescribe,
     })
 
-    if (valueInputOrigin ==""){
-        return alert("Informe sua origem de destino");
+    
+    if (valueInputOrigin ===""){
+        alert("Informe sua origem de destino");
+        return 
     }
 
-    if (valueInputDestiny ==""){
-        return alert("Informe o destino desejado");
+    if (valueInputDestiny ===""){
+         alert("Informe o destino desejado");
+         return
     }
 
-    if (valueInputNumberContact ==""){
-        return alert("Informe numero para contato");
+    if (valueInputNumberContact ===""){
+         alert("Informe numero para contato");
+         return
     }
  
+const formData = {
+    valueInputOrigin,
+    valueInputDestiny,
+    valueInputDate,
+    valueInputHour,
+    valueInputDesiredValue,
+    valueInputNumberContact,
+	valueCheckBoxAnimals,
+	valueCheckBoxBaggage,
+	valueTextFieldDescribe,
+}
 
-    navigate("../look_for_a_ride");
+axios.post("http://localhost:3333/offer", formData)
+
+.then(function(response){
+    //Lida com a resposta do servidor
+    console.log(response.data);
+})
+.catch(function(error){
+    //Lida com erros da requisição
+    console.error(error);
+})
+    /* navigate("look_for_a_ride"); */
 
 })

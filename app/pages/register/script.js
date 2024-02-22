@@ -58,6 +58,6 @@ document.querySelector("button").addEventListener("click", () => {
         console.error(error);
       });
 
-    navigate('../login');
+    navigate('login');
 })
 
