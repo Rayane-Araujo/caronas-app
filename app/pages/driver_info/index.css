@@ -1,0 +1,117 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ header {
+    text-align: center;
+    color: #FFA500;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+header img {
+    width: 80px;
+}
+
+h3 {
+    letter-spacing: -1.5px;
+    padding: 0% 29%;
+}
+main div.content_valor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 43px;
+}
+main input.texto_valor {
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    width: 102px;
+    border: none;
+    font-weight: 400;
+    letter-spacing: -2.61px;
+}
+main div.nome_condutor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: -27px;
+}
+main h4.texto_nome_condutor {
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    width: 175px;
+    border: none;
+    font-weight: 400;
+    letter-spacing: -2.61px;
+}
+main div.content_info {
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.79px;
+    margin-left: -122px;
+    margin-top: 21px;
+}
+main div.car {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 14px;
+    margin-left: -12px;
+}
+main div.pet {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 11px;
+    margin-left: -7px;
+}
+main div.bag {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 7px;
+    margin-left: -66px;
+
+}
+main div.line {
+    margin-top: 34px;
+    margin-left: -28px;
+
+}
+main div.localizacao {
+    margin-top: -135px;
+    margin-left: -14px;
+    font-weight: 400;
+    letter-spacing: -2.71px;
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    display: grid;
+}
+main div.localizacao1 {
+    margin-top: 38px;
+    margin-left: -14px;
+    font-weight: 400;
+    letter-spacing: -2.71px;
+    color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    display: grid;
+}
+
+img.whatsapp {
+    width: 15px;
+}
+
+img.images {
+    width: 20px;
+}
+
