@@ -47,6 +47,7 @@ document.querySelector("button").addEventListener("click", () => {
         valueInputDate: valueInputDate,
         valueInputPassword: valueInputPassword
     }
+    alert("Cadastro Realizado com Sucesso!");
 
     axios.post("http://localhost:3333/users", formData)
     .then(function (response) {

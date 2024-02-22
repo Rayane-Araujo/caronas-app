@@ -49,6 +49,17 @@ class usersController {
         })
       };
 
+      const user = await knex("users").where({email: req.body.valueInputEmail}).first();
+     
+      //valida se o usuário existe
+      if (user !== undefined) {
+        return res.status(400).json({
+          status: "ERROR",
+          msg: "E-mail já cadastrado!"
+        });
+      }
+ 
+
       res.status(201).json({ status: "OK" });
 
       const data = {
@@ -60,19 +71,6 @@ class usersController {
       };
 
       await knex("users").insert(data);
-    } catch (error) {
-      console.log(error);
-      res.status(400).json({ status: "ERROR", msg: error });
-    }
-  }
-
-  async delete(req, res) {
-    try {
-      // const data = await knex("users").where("id", req.params.id).first();
-
-      await knex("users").where("id", req.params.id).delete();
-
-      res.status(200).json({ status: "OK" });
     } catch (error) {
       console.log(error);
       res.status(400).json({ status: "ERROR", msg: error });
