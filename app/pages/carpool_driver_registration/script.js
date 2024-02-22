@@ -34,6 +34,6 @@ document.querySelector("button").addEventListener("click", function() {
     }
  
 
-    navigate("../look_for_a_ride");
+    // navigate("look_for_a_ride");
 
 })

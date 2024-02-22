@@ -69,7 +69,7 @@ class offerController{
     async getAll(req, res) {
         try {
           const data = await knex("offerRide");
-          res.status(200).json({ status: "ok", daraRes: data });
+          res.status(200).json({ status: "ok", dataRes: data });
         } catch (error) {
           console.log(error);
           res.status(400).json({ status: "ERROR", msg: error });
