@@ -3,46 +3,38 @@ const knex = require('../database');
 class offerController{
     async create(req, res) {
       try {
-        if (!req.body.valueInputOrigin || req.body.valueInputOrigin == "") {
+        if (!req.body.origin || req.body.origin == "") {
           return res.status(400).json({
             status: ("ERROR"),
             msg: ("O campo Origem é Obrigatório! ")
-            })
-        }; 
+          })
+        };
 
-        if (!req.body.valueInputHour || req.body.valueInputHour == "") {
+        if (!req.body.time || req.body.time == "") {
           return res.status(400).json({
             status: ("ERROR"),
             msg: ("O Horário é Obrigatório! ")
-            })
-        }; 
+          })
+        };
         
-        if (!req.body.valueInputDestiny || req.body.valueInputDestiny == "") {
+        if (!req.body.destiny || req.body.destiny == "") {
           return res.status(400).json({
             status: ("ERROR"),
             msg: ("O campo Destino é Obrigatório! ")
-            })
-        };  
+          })
+        };
 
-        if (!req.body.valueInputDate || req.body.valueInputDate == "") {
+        if (!req.body.date || req.body.date == "") {
           return res.status(400).json({
             status: ("ERROR"),
             msg: ("O campo Horário é Obrigatório! ")
-            })
-        }; 
-
-        if (!req.body.valueInputDesiredValue || req.body.valueInputDesiredValue == "") {
+          })
+        };
+        if (!req.body.type || req.body.time == "") {
           return res.status(400).json({
             status: ("ERROR"),
-            msg: ("O Valor é Obrigatório! ")
-            })
-        }; 
-
-        if (!req.body.valueInputNumberContact || req.body.valueInputNumberContact == "") {
-          return res.status(400).json({
-            status: ("ERROR"),
-            msg: ("O Contato é Obrigatório! ")
-            })
+            msg: ("O campo Tipo é Obrigatório!")
+          })
         };
 
         const data = {
@@ -50,13 +42,11 @@ class offerController{
           destination: req.body.valueInputDestiny,
           time: req.body.valueInputHour,
           date: req.body.valueInputDate,
-          price: req.body.valueInputDesiredValue,
           animals: req.body.valueCheckBoxAnimals,
           baggage: req.body.valueCheckBoxBaggage,
-          telephone: req.body.valueInputNumberContact,
-          description: req.body.valueTextFieldDescribe
+          observation: req.body.valueTextFieldDescribe
         }
-        await knex("offerRide").insert(data);
+        await knex("ride").insert(data);
 
           
           res.status(201).json({ status: "ok" });
@@ -68,7 +58,7 @@ class offerController{
     
     async getAll(req, res) {
         try {
-          const data = await knex("offerRide");
+          const data = await knex("ride");
           res.status(200).json({ status: "ok", dataRes: data });
         } catch (error) {
           console.log(error);
