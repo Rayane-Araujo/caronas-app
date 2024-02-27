@@ -14,7 +14,7 @@ app.use(cors());
       table.string("name");
       table.string("email");
       table.string("telephone");
-      table.date("date_birth");
+      table.string("vehicle");
       table.string("password");
     });
 
