@@ -8,7 +8,7 @@ class loginController {
       //buscando o usuario
       const user = await knex("users")
         .where({
-          email: body.valueInputEmail,
+          email: body.email,
         })
         .first();
 
@@ -21,7 +21,7 @@ class loginController {
       }
 
       //valida senha
-      if (user.password !== body.valueInputPassword) {
+      if (user.password !== body.pass) {
         return res.status(400).json({
           status: "ERROR",
           msg: "Senha invalida",
