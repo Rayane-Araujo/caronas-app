@@ -50,7 +50,7 @@ document.querySelector("button").addEventListener("click", function () {
   };
 
   axios
-    .post("http://localhost:3333/offer", formData)
+    .post("http://localhost:3333/ride", formData)
 
     .then(function (response) {
       //Lida com a resposta do servidor

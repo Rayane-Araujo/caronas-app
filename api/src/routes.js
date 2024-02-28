@@ -1,6 +1,6 @@
 const express = require('express');
 const knex = require("./database");
-const offerController = require("./controllers/offer");
+const rideController = require("./controllers/ride");
 const requestController = require("./controllers/request");
 const searchController = require("./controllers/search");
 const usersController = require("./controllers/users");
@@ -21,9 +21,10 @@ appRoutes.get("/request", requestController.getAll);
 //ROTAS SEARCH
 appRoutes.get("/search", searchController.getAll);
 
-//ROTAS OFFER
-appRoutes.post("/ride", offerController.create);
-appRoutes.get("/ride", offerController.getAll);
+//ROTAS RIDE
+appRoutes.post("/ride", rideController.create);
+appRoutes.get("/ride", rideController.getAll);
+appRoutes.get("/ride/:id", rideController.getOne);
 
 
 // ROTAS LOGIN
