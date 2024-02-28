@@ -22,8 +22,8 @@ appRoutes.get("/request", requestController.getAll);
 appRoutes.get("/search", searchController.getAll);
 
 //ROTAS OFFER
-appRoutes.post("/offer", offerController.create);
-appRoutes.get("/offer", offerController.getAll);
+appRoutes.post("/ride", offerController.create);
+appRoutes.get("/ride", offerController.getAll);
 
 
 // ROTAS LOGIN
