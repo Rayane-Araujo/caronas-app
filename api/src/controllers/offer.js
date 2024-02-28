@@ -38,13 +38,12 @@ class offerController{
         };
 
         const data = {
-          origin: req.body.valueInputOrigin,
-          destination: req.body.valueInputDestiny,
-          time: req.body.valueInputHour,
-          date: req.body.valueInputDate,
-          animals: req.body.valueCheckBoxAnimals,
-          baggage: req.body.valueCheckBoxBaggage,
-          observation: req.body.valueTextFieldDescribe
+          origin: req.body.origin,
+          destination: req.body.destiny,
+          time: req.body.time,
+          date: req.body.date,
+          observation: req.body.observation,
+          type: req.body.type
         }
         await knex("ride").insert(data);
 
