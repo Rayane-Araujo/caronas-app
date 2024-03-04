@@ -95,3 +95,11 @@ main div.links {
   .alert p {
     margin-top: 10px; /* Adiciona espaço acima do parágrafo */
   }
+
+.alert .button-close {
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}

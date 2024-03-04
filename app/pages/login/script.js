@@ -39,5 +39,13 @@ document.querySelector('#forgot-password').addEventListener('click', function(e)
   e.preventDefault();
   document.querySelector('#overlay').style.display = 'block';
   document.querySelector('#alert-text').innerHTML = '<h2>Informação</h2><p>Entre em contato via Whatsapp no número: 11942981822</p>';
+
+  setTimeout(() => {
+    document.querySelector('#overlay').style.display = 'none';
+  }, 4000);  
 });
+
+document.querySelector(".button-close").addEventListener('click',function(){
+  document.querySelector('#overlay').style.display = 'none';
+})
 
