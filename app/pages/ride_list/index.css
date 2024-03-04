@@ -1,9 +1,10 @@
-header{
+header {
   text-align: center;
   color: #FFA500;
   font-size: 25px;
   margin-top: 40px;
 }
+
 header img {
   width: 80px;
 }
@@ -23,60 +24,6 @@ main div.content div.contents {
 
 }
 
-main div.content_search {
-  display: flex;
-  flex-direction: column;
-  height: 82px;
-  gap: 6px;
-  margin-top: -22px;
-}
-
-main input.origin {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  width: 59%;
-  border-color: #d9d9d9;
-  margin-left: 15%;
-}
-
-main input.destiny {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  width: 59%;
-  border-color: #d9d9d9;
-  margin-left: 15%;
-}
-
-main div.origin_image {
-  margin-top: -91px;
-  margin-left: 9%;
-}
-
-main div img.origin_image {
-  width: 18px;
-  margin-top: 10px;
-}
-
-main div.destiny_image {
-  margin-top: -2px;
-  margin-left: 9%;
-}
-
-main div img.destiny_image {
-  width: 16px;
-}
-
-main div.image_indication {
-  margin-top: -44px;
-  margin-left: 78%;
-}
-
-main div img.image_indication  {
-  width: 30px;
-}
-
 main div.subtitle {
   display: flex;
   flex-direction: row;
@@ -85,25 +32,10 @@ main div.subtitle {
   color: #6E6E6E;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  margin-left: 35px;
+  justify-content: center;
 }
 
-
-main div.requester {
-  display: flex;
-  gap: 5px;
-}
-
-main div.driver {
-  display: flex;
-  gap: 5px;
-}
-
-main div img.subtitle_image {
-  width: 15px;
-}
-
-main div.list_ride{
+main div.list_ride {
   width: 50vh;
   gap: 18px;
   display: flex;
@@ -112,47 +44,8 @@ main div.list_ride{
   padding: 0px 28px;
 }
 
-main div.image_span_match {
+.content-button{
   display: flex;
-  margin-top: 10px;
   justify-content: center;
-  gap: 1px;
-  font-family: 'inter', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  color: #6E6E6E;
+  margin-top: 20px;
 }
-
-.images_inputs_clock_and_calendar {
-  display: flex;
-  margin-top: 15px;
-  justify-content: center;
-}
-
-.image_with_input_clock {
-  display: flex;
-  gap: 5px;
-}
-
-.input_clock_match {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-color: #d9d9d9;
-  width: 39px;
-}
-
-.image_with_input_calendar {
-  display: flex;
-  gap: 5px;
-  margin-left: 81px;
-}
-
-.input_calendar_match {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-color: #d9d9d9;
-  width: 56px;
-}
-
