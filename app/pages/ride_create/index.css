@@ -18,6 +18,29 @@ header img {
     width: 80px;
 }
 
+.container {
+    margin-right: 4px;
+}
+
+
+main div.inputs_with_clock {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.inputs_with_clock input {
+    width: 100%;
+}
+
+
+.label-informacoes {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    height: 2em;
+    color: gray;
+}
+
 main div.content {
     display: flex;
     flex-direction: column;
@@ -28,12 +51,15 @@ main div.content {
     padding-left: 28px;
     padding-right: 28px;
 }
+
+
 main fieldset {
     height: 150px;
     border-radius: 16px;
     width: 302px;
     border: 1px solid #FFA500;
 }
+
 
 h4 {
     display: table-caption;
@@ -67,14 +93,27 @@ main div.custom-checkbox input+label:before {
 main div.custom-checkbox input:checked+label:before {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
     background-color: #FFA500;
-    background-position: center;
+    /* background-position: center; */
     border: none;
-    padding: 1px;
+    /* padding: 1px; */
 }
 
 main div.check {
+    display: flex;
+    align-content:space-between;
+    font-size: 12px;
+    margin-top: 30px;
+    gap: 6px;
     font-family: 'Itim', cursive;
     color: #6e6e6e;
+}
+
+.checkbox {
+    margin-right: 50px;
+}
+
+.input_calendar {
+  width: 100%;
 }
 
 main div.content div.contents {
@@ -89,22 +128,12 @@ main div textarea {
     border-radius: 4px;
 }
 
-main h5 {
-    margin-block-start: 1.3em;
-    margin-inline-start: 117px;
-    font-weight: 400;
-    font-family: 'itim', cursive;
-    color: #6e6e6e;
-}
-
 main div.content_search {
     display: flex;
     flex-direction: column;
     height: 51px;
     margin-inline-start: 1.3em;
     gap: 6px;
-
-    
 }
 
 main input.origin {
@@ -148,6 +177,10 @@ main div.image_indication {
 
 img.image_indication {
     width: 30px;
+}
+
+button {
+    margin-top: 7em;
 }
 
 
