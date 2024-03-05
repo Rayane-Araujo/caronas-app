@@ -33,6 +33,7 @@ document.querySelector("button").addEventListener("click", function () {
       console.error(error);
     });
 
+    navigate('ride_list')
 });
 
 document.querySelector('#forgot-password').addEventListener('click', function(e) {

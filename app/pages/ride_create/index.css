@@ -112,10 +112,6 @@ main div.check {
     margin-right: 50px;
 }
 
-.input_calendar {
-  width: 100%;
-}
-
 main div.content div.contents {
     display: flex;
     flex-direction: column;

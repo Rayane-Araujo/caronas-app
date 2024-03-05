@@ -2,7 +2,7 @@ document.querySelector("button").addEventListener("click", () => {
     const valueInputName = document.querySelector('#name').value;
     const valueInputEmail = document.querySelector("#email").value;
     const valueInputPhone = document.querySelector('#tel').value;
-    const valueInputDate = document.querySelector('#date').value;
+    const valueInputVehicle = document.querySelector('#vehicle').value;
     const valueInputPassword = document.querySelector("#password").value;
     const valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
     
@@ -10,7 +10,7 @@ document.querySelector("button").addEventListener("click", () => {
         name: valueInputName,
         email: valueInputEmail,
         phone: valueInputPhone,
-        date: valueInputDate,
+        vehicle: valueInputVehicle,
         password: valueInputPassword,
         PasswordConfirm: valueInputPasswordConfirm,
     })
@@ -27,24 +27,37 @@ document.querySelector("button").addEventListener("click", () => {
         alert("Favor informe o numero de telefone");
         return
     }
-    if (valueInputDate === "") {
-        alert("Favor informe a data de nascimento")
+    if (valueInputVehicle === "") {
+        alert("Favor informe o modelo do veículo")
         return
+    }
+
+    if (valueInputPasswordConfirm != valueInputPassword ){
+        alert("as senhas não coincidem")
+        return
+   
     }
     if (valueInputPassword === "") {
         alert("Favor informe a senha");
         return
+
+        
     }
     if (valueInputPasswordConfirm === "") {
         alert("Favor informe a confirmação de senha");
         return
+
+    
+  
     }
+
+  
 
     const formData = {
         valueInputName: valueInputName,
         valueInputEmail: valueInputEmail,
         valueInputPhone: valueInputPhone,
-        valueInputDate: valueInputDate,
+        valueInputVehicle: valueInputVehicle,
         valueInputPassword: valueInputPassword
     }
     alert("Cadastro Realizado com Sucesso!");
