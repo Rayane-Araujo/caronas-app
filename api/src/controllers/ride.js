@@ -3,14 +3,14 @@ const knex = require("../database");
 class rideController {
   async create(req, res) {
     try {
-      if (!req.body.origin || req.body.origin == "") {
+      if (!req.body.origin) {
         return res.status(400).json({
           status: "ERROR",
           msg: "O campo Origem é Obrigatório! ",
         });
       }
 
-      if (!req.body.time || req.body.time == "") {
+      if (!req.body.time) {
         return res.status(400).json({
           status: "ERROR",
           msg: "O Horário é Obrigatório! ",
@@ -66,12 +66,22 @@ class rideController {
 
   async getOne(req, res) {
     try {
-      const dataRide = await knex("ride").where("id", req.params.id).first();
-      const dataUser = await knex.select("name", "vehicle", "telephone").from("users");
-      const data = {
-        dataUser,
-        dataRide
-      };
+      const data = await knex("ride")
+        .where("ride.id", req.params.id)
+        .join("users", "ride.user_id", "=", "users.id")
+        .select(
+          "ride.id",
+          "users.name",
+          "users.vehicle",
+          "users.telephone as phone",
+          "ride.origin",
+          "ride.destination as destiny",
+          "ride.time",
+          "ride.date",
+          "ride.observation",
+          "ride.type"
+        )
+        .first();
 
       if (data === undefined) {
         return res.status(400).json({
