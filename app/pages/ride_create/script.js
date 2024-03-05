@@ -3,27 +3,18 @@ document.querySelector("button").addEventListener("click", function () {
   const valueInputDestiny = document.querySelector("#destiny").value;
   const valueInputHour = document.querySelector("#hour").value;
   const valueInputDate = document.querySelector("#date").value;
-  const valueInputDesiredValue = document.querySelector("#value").value;
-  const valueCheckBoxBaggage = document.querySelector("#checkbox1").checked;
-  const valueCheckBoxAnimals = document.querySelector("#checkbox2").checked;
-  const valueInputNumberContact = document.querySelector("#number").value;
-  const valueTextFieldDescribe =
-    document.querySelector("#textFieldDescribe").value;
+  const valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
 
   console.log({
     origin: valueInputOrigin,
     destiny: valueInputDestiny,
     hour: valueInputHour,
     date: valueInputDate,
-    value: valueInputDesiredValue,
-    baggage: valueCheckBoxBaggage,
-    animals: valueCheckBoxAnimals,
-    numberContact: valueInputNumberContact,
     textField: valueTextFieldDescribe,
   });
 
   if (valueInputOrigin === "") {
-    alert("Informe sua origem de destino");
+    alert("Informe sua origem");
     return;
   }
 
@@ -32,20 +23,12 @@ document.querySelector("button").addEventListener("click", function () {
     return;
   }
 
-  if (valueInputNumberContact === "") {
-    alert("Informe numero para contato");
-    return;
-  }
 
   const formData = {
     valueInputOrigin,
     valueInputDestiny,
     valueInputDate,
     valueInputHour,
-    valueInputDesiredValue,
-    valueInputNumberContact,
-    valueCheckBoxAnimals,
-    valueCheckBoxBaggage,
     valueTextFieldDescribe,
   };
 

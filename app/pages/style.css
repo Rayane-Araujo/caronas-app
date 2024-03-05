@@ -203,7 +203,7 @@ main div.input_calendar_with_image {
 }
 
 main input.input_calendar {
-  width: 35%;
+  width: 75%;
   border-left: none;
   border-right: none;
   border-top: none;

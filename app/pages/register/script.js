@@ -31,14 +31,27 @@ document.querySelector("button").addEventListener("click", () => {
         alert("Favor informe o modelo do veículo")
         return
     }
+
+    if (valueInputPasswordConfirm != valueInputPassword ){
+        alert("as senhas não coincidem")
+        return
+   
+    }
     if (valueInputPassword === "") {
         alert("Favor informe a senha");
         return
+
+        
     }
     if (valueInputPasswordConfirm === "") {
         alert("Favor informe a confirmação de senha");
         return
+
+    
+  
     }
+
+  
 
     const formData = {
         valueInputName: valueInputName,

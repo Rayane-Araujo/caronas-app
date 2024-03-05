@@ -1,5 +1,5 @@
 
 document.querySelector('.content-button button').addEventListener('click', function (){
-    alert('oi');
+    navigate('ride_create');
 })
 
