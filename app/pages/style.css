@@ -10,8 +10,14 @@
   overflow: hidden;
 } 
 
-h3,h4,span,label,button {
+h3,h4,button,a {
   font-family: 'Itim', cursive;
+  font-weight: 400;
+}
+
+label,p,h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
 }
 
 h3,h4 {
