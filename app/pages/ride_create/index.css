@@ -47,6 +47,7 @@ main div.content {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    left: 30px;
     margin-top: 6 px;
     padding-left: 28px;
     padding-right: 28px;
@@ -95,7 +96,7 @@ main div.custom-checkbox input:checked+label:before {
     background-color: #FFA500;
     /* background-position: center; */
     border: none;
-    /* padding: 1px; */
+    padding: 1px;
 }
 
 main div.check {
@@ -108,8 +109,8 @@ main div.check {
     color: #6e6e6e;
 }
 
-.checkbox {
-    margin-right: 50px;
+.custom-checkbox {
+    margin-right: 2rem;
 }
 
 main div.content div.contents {
@@ -176,7 +177,9 @@ img.image_indication {
 }
 
 button {
-    margin-top: 7em;
+    margin-top: 5rem;
 }
+
+
 
 
