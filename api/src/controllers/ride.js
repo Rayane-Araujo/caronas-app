@@ -37,10 +37,6 @@ class rideController {
         });
       }
 
-      const aaa =
-        knex.select("id").from("users");
-      
-
       const data = {
         origin: req.body.origin,
         destination: req.body.destiny,
@@ -48,7 +44,6 @@ class rideController {
         date: req.body.date,
         observation: req.body.observation,
         type: req.body.type,
-        user_id: aaa
       };
       await knex("ride").insert(data);
 
