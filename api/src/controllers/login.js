@@ -27,8 +27,8 @@ class loginController {
           msg: "Senha invalida",
         });
       }
-
-      res.status(200).json({ status: "OK" });
+      const userId = (await knex.select("users.id").from("users").where("email", body.email));
+      res.status(200).json({ status: "OK", userId: userId});
     } catch (error) {
       console.log(error);
       res.status(400).json({ status: "ERROR", msg: "Usuário não cadastrado!" });
