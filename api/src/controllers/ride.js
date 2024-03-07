@@ -30,6 +30,7 @@ class rideController {
           msg: "O campo Horário é Obrigatório! ",
         });
       }
+
       if (!req.body.type || req.body.time == "") {
         return res.status(400).json({
           status: "ERROR",
@@ -38,6 +39,7 @@ class rideController {
       }
 
       const data = {
+        user_id: req.body.user_id,
         origin: req.body.origin,
         destination: req.body.destiny,
         time: req.body.time,
