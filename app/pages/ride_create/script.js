@@ -4,20 +4,30 @@ document.querySelector("button").addEventListener("click", function () {
   const valueInputHour = document.querySelector("#hour").value;
   const valueInputDate = document.querySelector("#date").value;
   const valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
+  // const checkbox = document.querySelectorAll('input[type="checkbox"]');
+  const valueCheckBoxRequest = document.querySelector("#checkbox2");
+  const valueCheckBoxOffer = document.querySelector("#checkbox1").value;
 
-  console.log({
-    origin: valueInputOrigin,
-    destiny: valueInputDestiny,
-    hour: valueInputHour,
-    date: valueInputDate,
-    textField: valueTextFieldDescribe,
+  console.log("eeee", {
+    valueInputOrigin,
+    valueInputDestiny,
+    valueInputHour,
+    valueInputDate,
+    valueTextFieldDescribe,
+
   });
+
+  const checkbox = (valueCheckBoxRequest.checked) ? "request" : "offer"
+
+
+  console.log("aaaaab", checkbox);
+
+ 
 
   if (valueInputOrigin === "") {
     alert("Informe sua origem");
     return;
   }
-
   if (valueInputDestiny === "") {
     alert("Informe o destino desejado");
     return;
@@ -25,11 +35,12 @@ document.querySelector("button").addEventListener("click", function () {
 
 
   const formData = {
-    valueInputOrigin,
-    valueInputDestiny,
-    valueInputDate,
-    valueInputHour,
-    valueTextFieldDescribe,
+    origin: valueInputOrigin,
+    destiny: valueInputDestiny,
+    date: valueInputDate,
+    time: valueInputHour,
+    observation: valueTextFieldDescribe,
+    type: checkbox,
   };
 
   axios
