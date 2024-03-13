@@ -1,47 +1,45 @@
 document.querySelector("button").addEventListener("click", function () {
-  const valueInputOrigin = document.querySelector("#origin").value;
-  const valueInputDestiny = document.querySelector("#destiny").value;
-  const valueInputHour = document.querySelector("#hour").value;
-  const valueInputDate = document.querySelector("#date").value;
-  const valueTextFieldDescribe = document.querySelector("#textFieldDescribe").value;
-  // const checkbox = document.querySelectorAll('input[type="checkbox"]');
-  const valueCheckBoxRequest = document.querySelector("#checkbox2");
-  const valueCheckBoxOffer = document.querySelector("#checkbox1").value;
-
-  console.log("eeee", {
-    valueInputOrigin,
-    valueInputDestiny,
-    valueInputHour,
-    valueInputDate,
-    valueTextFieldDescribe,
-
-  });
-
-  const checkbox = (valueCheckBoxRequest.checked) ? "request" : "offer"
+  const origin = document.querySelector("#origin").value;
+  const destiny = document.querySelector("#destiny").value;
+  const time = document.querySelector("#hour").value;
+  const date = document.querySelector("#date").value;
+  const observation = document.querySelector("#textFieldDescribe").value;
+  const checkBoxRequest = document.querySelector("#checkbox2");
+  const checkBoxOffer = document.querySelector("#checkbox1").value;
 
 
-  console.log("aaaaab", checkbox);
 
- 
+  const checkbox = (checkBoxRequest.checked) ? "request" : "offer"
 
-  if (valueInputOrigin === "") {
+
+  if (!origin) {
     alert("Informe sua origem");
     return;
   }
-  if (valueInputDestiny === "") {
+  if (!destiny ) {
     alert("Informe o destino desejado");
     return;
   }
-
-
+  if (!date) {
+    alert("Informe a Data");
+    return;
+  }
+  if (!time ) {
+    alert("Informe o horario");
+    return;
+  }
+  
   const formData = {
-    origin: valueInputOrigin,
-    destiny: valueInputDestiny,
-    date: valueInputDate,
-    time: valueInputHour,
-    observation: valueTextFieldDescribe,
+    origin,
+    destiny,
+    date,
+    time,
+    observation,
     type: checkbox,
+    user_id: 1
   };
+
+  alert("Carona criada com sucesso!");
 
   axios
     .post("http://localhost:3333/ride", formData)
@@ -49,10 +47,12 @@ document.querySelector("button").addEventListener("click", function () {
     .then(function (response) {
       //Lida com a resposta do servidor
       console.log(response.data);
+
     })
     .catch(function (error) {
       //Lida com erros da requisição
       console.error(error);
+
     });
   /* navigate("look_for_a_ride"); */
 });
