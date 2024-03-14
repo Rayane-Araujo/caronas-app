@@ -17,8 +17,8 @@ document.querySelector("button").addEventListener("click", function () {
   }
 
   const formData = {
-    valueInputEmail: valueInputEmail,
-    valueInputPassword: valueInputPassword,
+    email: valueInputEmail,
+    pass: valueInputPassword,
   };
 
   axios
@@ -33,7 +33,7 @@ document.querySelector("button").addEventListener("click", function () {
       console.error(error);
     });
 
-    navigate('ride_list')
+   navigate('ride_list')
 });
 
 document.querySelector('#forgot-password').addEventListener('click', function(e) {
