@@ -7,16 +7,13 @@ document.querySelector("button").addEventListener("click", function () {
   const checkBoxRequest = document.querySelector("#checkbox2");
   const checkBoxOffer = document.querySelector("#checkbox1").value;
 
-
-
-  const checkbox = (checkBoxRequest.checked) ? "request" : "offer"
-
+  const checkbox = checkBoxRequest.checked ? "request" : "offer";
 
   if (!origin) {
     alert("Informe sua origem");
     return;
   }
-  if (!destiny ) {
+  if (!destiny) {
     alert("Informe o destino desejado");
     return;
   }
@@ -24,11 +21,11 @@ document.querySelector("button").addEventListener("click", function () {
     alert("Informe a Data");
     return;
   }
-  if (!time ) {
+  if (!time) {
     alert("Informe o horario");
     return;
   }
-  
+
   const formData = {
     origin,
     destiny,
@@ -36,10 +33,10 @@ document.querySelector("button").addEventListener("click", function () {
     time,
     observation,
     type: checkbox,
-    user_id: 1
+    user_id: 1,
   };
 
-  alert("Carona criada com sucesso!");
+  // alert("Carona criada com sucesso!");
 
   axios
     .post("http://localhost:3333/ride", formData)
@@ -48,11 +45,16 @@ document.querySelector("button").addEventListener("click", function () {
       //Lida com a resposta do servidor
       console.log(response.data);
 
+      if (checkbox === "request") {
+        alert("Pedido de Carona criado com sucesso!");
+      } else {
+        alert("Carona Criado com sucesso!");
+      }
     })
     .catch(function (error) {
       //Lida com erros da requisição
       console.error(error);
-
+      alert(JSON.stringify(error.response.data.msg));
     });
   /* navigate("look_for_a_ride"); */
 });
