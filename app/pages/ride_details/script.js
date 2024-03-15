@@ -1,21 +1,29 @@
 axios
-  .get("http://localhost:3333/ride/1")
+  .get(`http://localhost:3333/ride/${window.location.href.split("?")[1]}`)
   .then(function (response) {
     //Lida com a resposta do servidor
-    console.log(response.data.dataRes);
-
     const data = response.data.dataRes;
 
     const content = `
       <div class="container-descricao-detalhes-carona">
-        <span class="descricao-detalhe">Condutor: ${data.name}</span>
-        <span class="descricao-detalhe">Veículo: ${data.vehicle}</span>
+        ${
+          data.type === "offer"
+            ? `
+              <span class="descricao-detalhe">Condutor: ${data.name}</span>
+              <span class="descricao-detalhe">Veículo: ${data.vehicle}</span>
+              `
+            : `
+              <span class="descricao-detalhe">Usuário: ${data.name}</span>
+              `
+        }
       </div>
 
       <h4>Observações</h4>
-      <p class="descricao-detalhe" id="textFieldDescribe">${data.observation}</p>
+      <p class="descricao-detalhe" id="textFieldDescribe">
+        ${data.observation}
+      </p>
 
-      <h4>Oferecendo carona de:</h4>
+      <h4>${data.type === "offer" ? "Oferecendo" : "Pedindo"} carona de:</h4>
 
       <div>
         <div class="line_content">
@@ -31,7 +39,7 @@ axios
             <span><span>${data.destiny}</span></span>
             <span class="descricao-detalhe data">
               <span id="date">Data: ${data.date}</span
-              ><span id="hour">ás ${data.time}</span>
+              ><span id="hour"> ás ${data.time}</span>
             </span>
           </div>
         </div>
@@ -39,6 +47,11 @@ axios
       `;
 
     document.querySelector(".content_info").innerHTML = content;
+
+    const textModal = document.querySelector(".modal-pop-up p").textContent;
+
+    document.querySelector(".modal-pop-up p").textContent =
+      textModal + data.phone;
   })
   .catch(function (error) {
     //Lida com erros da requisição

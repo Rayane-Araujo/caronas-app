@@ -6,6 +6,12 @@ document
 
 const url = "http://localhost:3333/ride";
 
+const customNavigate = (id) => {
+  const path = window.location.href.split("app");
+
+  window.location.href = `${path[0]}app/pages/ride_details/?${id}`;
+};
+
 function getRideList() {
   axios
     .get(url)
@@ -13,7 +19,7 @@ function getRideList() {
       const target = document.querySelector(".list_ride");
       target.innerHTML = response.data.dataRes
         .map((item, key) => {
-          return `<div class="item_ride_available">
+          return `<div class="item_ride_available" onclick="customNavigate(${item.id})">
                       <div class="item_ride_columm_picture">
                           <img src="../images/foto_condut.png" alt="foto_condutor" />
                       </div>
