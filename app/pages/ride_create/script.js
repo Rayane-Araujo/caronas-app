@@ -1,13 +1,43 @@
+let type = undefined;
+
+const selectType = (path) => {
+  if (path === "div#requestOption") {
+    document
+      .querySelector("div#requestOption input")
+      .setAttribute("checked", true);
+
+    document.querySelector("div#offerOption input").removeAttribute("checked");
+    type = "request";
+    return;
+  }
+
+  if (path === "div#offerOption") {
+    document
+      .querySelector("div#offerOption input")
+      .setAttribute("checked", true);
+
+    document
+      .querySelector("div#requestOption input")
+      .removeAttribute("checked");
+
+    type = "offer";
+    return;
+  }
+};
+
+document
+  .querySelector("div#requestOption")
+  .addEventListener("click", () => selectType("div#requestOption"));
+document
+  .querySelector("div#offerOption")
+  .addEventListener("click", () => selectType("div#offerOption"));
+
 document.querySelector("button").addEventListener("click", function () {
   const origin = document.querySelector("#origin").value;
   const destiny = document.querySelector("#destiny").value;
   const time = document.querySelector("#hour").value;
   const date = document.querySelector("#date").value;
   const observation = document.querySelector("#textFieldDescribe").value;
-  const checkBoxRequest = document.querySelector("#checkbox2");
-  const checkBoxOffer = document.querySelector("#checkbox1").value;
-
-  const checkbox = checkBoxRequest.checked ? "request" : "offer";
 
   if (!origin) {
     alert("Informe sua origem");
@@ -32,20 +62,18 @@ document.querySelector("button").addEventListener("click", function () {
     date,
     time,
     observation,
-    type: checkbox,
-    user_id: 1,
+    type,
+    user_id: Number(window.localStorage.getItem("userLoggedIn")),
   };
-
-  // alert("Carona criada com sucesso!");
 
   axios
     .post("http://localhost:3333/ride", formData)
 
     .then(function (response) {
       //Lida com a resposta do servidor
-      console.log(response.data);
+      navigate("ride_list");
 
-      if (checkbox === "request") {
+      if (type === "request") {
         alert("Pedido de Carona criado com sucesso!");
       } else {
         alert("Carona Criado com sucesso!");
@@ -54,7 +82,6 @@ document.querySelector("button").addEventListener("click", function () {
     .catch(function (error) {
       //Lida com erros da requisição
       console.error(error);
-      alert(JSON.stringify(error.response.data.msg));
+      alert(error.response.data.msg);
     });
-  /* navigate("look_for_a_ride"); */
 });

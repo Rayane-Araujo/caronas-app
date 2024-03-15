@@ -22,7 +22,6 @@ document.querySelector("button").addEventListener("click", function () {
 
     .then(function (response) {
       // Lida com a resposta do servidor
-      console.log(response.data);
       window.localStorage.setItem("userLoggedIn", response.data.userId);
       navigate("ride_list");
     })
