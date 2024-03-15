@@ -1,173 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Para onde voce quer ir?</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="../navegation.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="../images/Logo Carro.jpg" alt="Logo do App Caronas" />
-        <h3>Caronas Disponiveis</h3>
+      <img src="../images/Logo Carro.jpg" alt="Logo do App Caronas" />
+      <h3>Caronas Disponiveis</h3>
     </header>
 
     <main>
+      <div class="content">
+        <div class="contents">
+          <div class="subtitle">
+            <div class="driver">
+              <span>Condutor</span>
+              <img class="subtitle_image" src="../images/icon_car.png" />
+            </div>
 
-        <div class="content">
-            <div class="contents">
-                <div>
-                    <div class="subtitle">
-                        <div class="driver">
-                            <span>Condutor</span>
-                            <img class="subtitle_image" src="../images/icon_car.png" />
-                        </div>
+            <div class="requester">
+              <span>Solicitante</span>
+              <img class="subtitle_image" src="../images/icon_user.png" />
+            </div>
+          </div>
 
-                        <div class="requester">
-                            <span>Solicitante</span>
-                            <img class="subtitle_image" src="../images/icon_user.png" />
-                        </div>
-                    </div>
-                    
-                    <div class="content-button">
-                    <button>Oferecer/Pedir</button>
-                    </div>
+          <div class="content-button">
+            <button>Oferecer/Pedir</button>
+          </div>
 
-                    <div class="list_ride" id="listRide">
-                        <div class="item_ride_available">
-                            <div class="item_ride_columm_picture">
-                                <img src="../images/foto_condut.png" alt="foto_condutor" />
-                            </div>
-
-                            <div class="item_ride_columm_details">
-                                <div class="ajust_text">
-                                    <img src="../images/icon_car.png" alt="image_car" />
-                                    <span>Luiz Meira Santos</span>
-                                </div>
-
-                                <div class="details_hours_value">
-                                    <div class="ajust_text">
-                                        <img src="../images/icon_clock.png" alt="image_clock" />
-                                        <span>13:00</span>
-                                    </div>
-                                    <div class="ajust_text">
-                                        <!-- <img src="../images/icon_dollar.png" alt="currency_icon" /> -->
-                                        <span>04/03/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_ride_columm_arrow">
-                                <img src="../images/icon_arrow_right.png" alt="image_arrow_right" />
-                            </div>
-
-                            <div class="item_ride_columm_show_hover">
-                                <div></div>
-                            </div>
-                        </div>
-
-                        <div class="item_ride_available">
-                            <div class="item_ride_columm_picture">
-                                <img src="../images/Ellipse 4.png" alt="foto_condutor" />
-                            </div>
-
-                            <div class="item_ride_columm_details">
-                                <div class="ajust_text">
-                                    <img src="../images/icon_car.png" alt="image_car" />
-                                    <span>José Francisco Toledo</span>
-                                </div>
-
-                                <div class="details_hours_value">
-                                    <div class="ajust_text">
-                                        <img src="../images/icon_clock.png" alt="image_clock" />
-                                        <span>13:00</span>
-                                    </div>
-                                    <div class="ajust_text">
-                                        <!--<img src="../images/icon_dollar.png" alt="currency_icon" />-->
-                                        <span>05/03/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_ride_columm_arrow">
-                                <img src="../images/icon_arrow_right.png" alt="image_arrow_right" />
-                            </div>
-
-                            <div class="item_ride_columm_show_hover">
-                                <div></div>
-                            </div>
-                        </div>
-
-                        <div class="item_ride_available">
-                            <div class="item_ride_columm_picture">
-                                <img src="../images/Renan_foto.png" alt="photo_driver" />
-                            </div>
-
-                            <div class="item_ride_columm_details" onclick="navigate('user_info')">
-                                <div class="ajust_text">
-                                    <img src="../images/icon_user.png" alt="image_car" />
-                                    <span>Renan Gonçalves Souza</span>
-                                </div>
-
-                                <div class="details_hours_value">
-                                    <div class="ajust_text">
-                                        <img src="../images/icon_clock.png" alt="image_clock" />
-                                        <span>13:00</span>
-                                    </div>
-                                    <div class="ajust_text">
-                                        <!--<img src="../images/icon_dollar.png" alt="currency_icon" />-->
-                                        <span>06/03/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_ride_columm_arrow">
-                                <img src="../images/icon_arrow_right.png" alt="image_arrow_right">
-                            </div>
-
-                            <div class="item_ride_columm_show_hover">
-                                <div></div>
-                            </div>
-                        </div>
-
-                        <div class="item_ride_available">
-                            <div class="item_ride_columm_picture">
-                                <img src="../images/fabricio.png" alt="photo_driver" />
-                            </div>
-
-                            <div class="item_ride_columm_details">
-                                <div class="ajust_text">
-                                    <img src="../images/icon_user.png" alt="image_car" />
-                                    <span>Fabricio Cesar Oliveira</span>
-                                </div>
-
-                                <div class="details_hours_value">
-                                    <div class="ajust_text">
-                                        <img src="../images/icon_clock.png" alt="image_clock" />
-                                        <span>13:00</span>
-                                    </div>
-                                    <div class="ajust_text">
-                                        <!--<img src="../images/icon_dollar.png" alt="currency_icon" />-->
-                                        <span>07/03/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_ride_columm_arrow">
-                                <img src="../images/icon_arrow_right.png" alt="image_arrow">
-                            </div>
-
-                            <div class="item_ride_columm_show_hover">
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                    <script src="./script.js"></script>
+          <div class="list_ride"></div>
+        </div>
+      </div>
     </main>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
