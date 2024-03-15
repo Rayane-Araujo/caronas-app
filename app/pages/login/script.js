@@ -23,14 +23,14 @@ document.querySelector("button").addEventListener("click", function () {
     .then(function (response) {
       // Lida com a resposta do servidor
       console.log(response.data);
+      window.localStorage.setItem("userLoggedIn", response.data.userId);
+      navigate("ride_list");
     })
     .catch(function (error) {
       // Lida com erros de requisição
       console.log(error);
-      alert(JSON.stringify(error.response.data.msg));
+      alert(error.response.data.msg);
     });
-
-  // navigate("ride_list");
 });
 
 document
