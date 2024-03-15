@@ -1,64 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalhes da carona</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./index.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="../images/foto_condut.png" alt="Foto de perfil do condutor" />
-        <h3>Detalhes da carona</h3>
+      <img src="../images/foto_condut.png" alt="Foto de perfil do condutor" />
+      <h3>Detalhes da carona</h3>
     </header>
     <main>
-        <div class="content_info">
-            <div class="container-descricao-detalhes-carona">
-                <span class="descricao-detalhe">Condutor: Luiz Meira</span>
-                <span class="descricao-detalhe">Veículo: VW Jetta preto</span>
-            </div>
+      <div class="content_info"></div>
 
-            <h4>Observações</h4>
-            <p class="descricao-detalhe">Preciso de uma carona, para realizar uma compra. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ullam, sint! Quibusdam dolor, adipisci cumque maxime iusto laborum, illo
-                architecto facilis quia in blanditiis vitae necessitatibus veniam nulla hic esse! Autem.</p>
+      <div class="button_interest">
+        <button id="button_interest">Demonstrar interesse</button>
+      </div>
 
-            <h4>Oferecendo carona de:</h4>
+      <div class="modal-pop-up">
+        <dialog>
+          <span class="button-close">X</span>
+          <h5>Informação</h5>
 
-            <div>
-                <div class="line_content">
-                    <img src="../images/Line 12.png" />
-                </div>
-
-                <div class="locate_content">
-                    <div class="localizacao">
-                        <span>Terminal Rodoviário Alcântara</span>
-                    </div>
-
-                    <div class="localizacao1">
-                        <span>Terminal Rodoviário Tietê</span>
-                        <span class="descricao-detalhe data">
-                            Data: 27/02/2024 ás 15:55
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            <div class="button_interest">
-                <button id="button_interest">Demonstrar interesse</button>
-            </div>
-
-            <div class="modal-pop-up">
-                <dialog>
-                    <span class="button-close">X</span>
-                    <h5>Informação</h5>
-        
-                    <p>Entre em contato via whatsapp no número: 119448575854</p>
-                </dialog>
-            </div>
+          <p>Entre em contato via whatsapp no número: ${data.date}</p>
+        </dialog>
+      </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
