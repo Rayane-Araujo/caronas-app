@@ -1,77 +1,66 @@
 document.querySelector("button").addEventListener("click", () => {
-    const valueInputName = document.querySelector('#name').value;
-    const valueInputEmail = document.querySelector("#email").value;
-    const valueInputPhone = document.querySelector('#tel').value;
-    const valueInputVehicle = document.querySelector('#vehicle').value;
-    const valueInputPassword = document.querySelector("#password").value;
-    const valueInputPasswordConfirm = document.querySelector("#password_confirm").value;
-    
-    console.log({
-        name: valueInputName,
-        email: valueInputEmail,
-        phone: valueInputPhone,
-        vehicle: valueInputVehicle,
-        password: valueInputPassword,
-        PasswordConfirm: valueInputPasswordConfirm,
-    })
-    
-    if (valueInputName === "") {
-        alert("Favor informe o nome");
-        return
-    }
-    if (valueInputEmail === "") {
-        alert("Favor informe o email");
-        return
-    }
-    if (valueInputPhone === "") {
-        alert("Favor informe o numero de telefone");
-        return
-    }
-    if (valueInputVehicle === "") {
-        alert("Favor informe o modelo do veículo")
-        return
-    }
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const phone = document.querySelector("#tel").value;
+  const vehicle = document.querySelector("#vehicle").value;
+  const password = document.querySelector("#password").value;
+  const PasswordConfirm = document.querySelector("#password_confirm").value;
 
-    if (valueInputPasswordConfirm != valueInputPassword ){
-        alert("as senhas não coincidem")
-        return
-   
-    }
-    if (valueInputPassword === "") {
-        alert("Favor informe a senha");
-        return
+  if (name === "") {
+    alert("Favor informe o nome");
+    return;
+  }
 
-        
-    }
-    if (valueInputPasswordConfirm === "") {
-        alert("Favor informe a confirmação de senha");
-        return
+  if (email === "") {
+    alert("Favor informe o email");
+    return;
+  }
 
-    
-  
-    }
+  if (phone === "") {
+    alert("Favor informe o numero de telefone");
+    return;
+  }
 
-  
+  if (vehicle === "") {
+    alert("Favor informe o modelo do veículo");
+    return;
+  }
 
-    const formData = {
-        valueInputName: valueInputName,
-        valueInputEmail: valueInputEmail,
-        valueInputPhone: valueInputPhone,
-        valueInputVehicle: valueInputVehicle,
-        valueInputPassword: valueInputPassword
-    }
-    alert("Cadastro Realizado com Sucesso!");
+  if (password === "") {
+    alert("Favor informe a senha");
+    return;
+  }
 
-    axios.post("http://localhost:3333/users", formData)
+  if (PasswordConfirm === "") {
+    alert("Favor informe a confirmação de senha");
+    return;
+  }
+
+  if (password != PasswordConfirm) {
+    alert("as senhas não coincidem");
+    return;
+  }
+
+  const formData = {
+    name: name,
+    email: email,
+    phone: phone,
+    vehicle: vehicle,
+    pass: password,
+  };
+
+  axios
+    .post("http://localhost:3333/users", formData)
     .then(function (response) {
-        // Lida com a resposta do servidor
-        console.log(response.data);
-      })
-      .catch(function (error) {
-        // Lida com erros de requisição
-        console.error(error);
-      });
+      // Lida com a resposta do servidor
+      console.log(response.data);
 
-    navigate('login');
-})
-
+      navigate("login");
+      alert("Cadastro Realizado com Sucesso!");
+    })
+    .catch(function (error) {
+      // Lida com erros de requisição
+      console.error(error);
+      alert("Houve um erro no cadastro!");
+    });
+});
