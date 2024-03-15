@@ -94,7 +94,7 @@ main div.locate_content {
     letter-spacing: -9%;
 }
 
-main div.localizacao {
+main div.origin {
     margin-top: -135px;
     font-weight: 400;
     color: #6e6e6e;
@@ -102,7 +102,7 @@ main div.localizacao {
     display: grid;
 }
 
-main div.localizacao1 {
+main div.destiny {
     margin-top: 4em;
     font-weight: 400;
     color: #6e6e6e;
