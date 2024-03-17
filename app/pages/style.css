@@ -5,6 +5,24 @@
   box-sizing: border-box;
 }
 
+ body {
+  margin: auto;
+} 
+
+h3,h4,button,a {
+  font-family: 'Itim', cursive;
+  font-weight: 400;
+}
+
+label,p,h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+h3,h4 {
+  color: #FFA500;
+}
+
 /* components */
 
 /* Component Input */
@@ -190,7 +208,7 @@ main div.input_calendar_with_image {
 }
 
 main input.input_calendar {
-  width: 35%;
+  width: 75%;
   border-left: none;
   border-right: none;
   border-top: none;
