@@ -43,6 +43,8 @@ cd caronas-app
 ```
 
 3. Instale as dependências
+<strong>OBS:</strong> Antes entre na pasta api digitando <strong>cd api</strong> e em seguinda rode o comando:
+
 
 ```
 npm install 
@@ -50,8 +52,6 @@ npm install
 ```
 
 4. Execute o app
-
-<strong>OBS:</strong> Antes entre na pasta api digitando <strong>cd api</strong> e em seguinda rode o comando:
 
 ```
 npm run dev
